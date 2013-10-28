@@ -3,11 +3,11 @@ $(function () {
 	$('.video-wrapper .btn-collapse').click(function(){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');
-			$(this).html('Collapse <em></em>');	
+			$(this).html('Hide <em></em>');	
 		}
 		else{
 		$(this).addClass('active')
-		$(this).html('Expand <em></em>');
+		$(this).html('Show <em></em>');
 		}
 		$(this).prev().slideToggle()
 		return false;
@@ -15,29 +15,39 @@ $(function () {
 	$('.contact-form .btn-collapse').click(function(){
 			if($(this).hasClass('active')){
 				$(this).removeClass('active')
-				$(this).html('Collapse <em></em>');
+				$(this).html('Hide <em></em>');
 			}
 			else{
 				$(this).addClass('active')
-				$(this).html('Expand <em></em>');
+				$(this).html('Show <em></em>');
 			}
 			
 			$(this).parents('.contact-form').find('.contact-form-collapse').stop(true, true).slideToggle()
 			return false;
 		 });
-		$('.panel-leftsidebar .btn-collapse').click(function(){
-				$('.panel-leftsidebar').animate({
-					width:	0												
-				},300)
+		$('.show-sidebar').click(function(){
+			if ($('.container-980').hasClass('content-expaneded')){
+				$('.container-980').removeClass('content-expaneded');
 				$('.panel-content-section').animate({
-					'margin-left' :	0
-				},300);
-				$('.show-sidebar').fadeIn(300)
+						'margin-left' :	220
+					},300);
+					$('.panel-leftsidebar').animate({
+							width:	200												
+						},300)
+				}
+				else{
 					$('.container-980').addClass('content-expaneded');
-
+					
+					$('.panel-content-section').animate({
+						'margin-left' :	20
+					},300);
+					$('.panel-leftsidebar').animate({
+							width:	0												
+					},300)
+				}
 			return false;
 		});
-		$('.show-sidebar').click(function(){
+		/*$('.show-sidebar').click(function(){
 			
 			$('.panel-content-section').animate({
 					'margin-left' :	220
@@ -48,9 +58,11 @@ $(function () {
 					},300)
 
 				});
-			$(this).fadeOut();
 			return false;
 		});
+		
+		*/
+		
 		$('.panel-leftsidebar li a').click(function(){
 			$('.content-area').fadeOut(0)
 			$(this.hash).fadeIn();

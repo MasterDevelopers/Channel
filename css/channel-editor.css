@@ -2,6 +2,15 @@
 #panel-page{
 	font-family:Verdana,​Helvetica,​Sans-Serif;	
 }
+
+#panel-page{
+	background:#eaeaea;
+	font-size:14px;
+	line-height:1.4;
+	text-align:left;
+	position:static;
+}
+
 #panel-page p,
 #panel-page label{
 	letter-spacing:inherit;
@@ -9,16 +18,12 @@
 #panel-page small{
 	color:#808080;
 }
-.container-980{
-	width:980px;
-	margin:0 auto;
-	position:relative;
+#panel-page #header{
+	height:auto;
 }
-#panel-page{
-	background:#fff;
-	font-size:14px;
-	line-height:1.4;
-	text-align:left;
+.container-980{
+	margin:0 auto;
+	padding:10px 15px;
 }
 #welcome h1{
 	color:#575859;
@@ -40,9 +45,9 @@
 	margin-bottom:0;
 }
 #panel-page .logo{
-    width: 400px;
+    width: 60%;
 	float:left;
-	font-size:20px;
+	font-size:16px;
 }
 #panel-page .logo img{
 	vertical-align: middle;
@@ -50,16 +55,15 @@
 }
 #panel-page .logo,
 .btn-section{
-	padding:22px 10px 15px;
 	text-align:left;
 	color:#fff;
 	float:left;
 }
 .panel-btn:focus,
 .panel-btn{
-	background:url(../images/btn-bg-1.png) repeat-x #6597c4;
+	background:#6699cc;
 	display:inline-block;
-	padding:6px 15px 5px;
+	padding:1px 15px 4px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -74,10 +78,6 @@
 }
 .content-area{
 	display:none;
-}
-#panel-page .content-area > h2,
-#panel-page .content-area > h2{
-	margin:0 0 10px;
 }
 .topic-left-section{
 	float:left;
@@ -94,7 +94,12 @@
 	text-align:left;
 	position:absolute;
 	overflow:hidden;
-	
+	top:0;
+	bottom:0;
+	left:0;
+	background: white;
+	margin-top:45px;
+	padding-top:50px;
 }
 .panel-leftsidebar .btn-collapse{
 	font-size:16px;
@@ -103,20 +108,26 @@
 #panel-page .show-sidebar:link,
 #panel-page .show-sidebar{
 	position:absolute;
-	left:10px;
-	top:10px;
 	color:#fff;
 	z-index:9999;
-	display:none;
+	left:160px;
+	top: 65px;
+	transition:all 0.4s ease 0s;
+}
+#panel-page .content-expaneded .show-sidebar{
+	left:40px;
+	
 }
 .panel-leftsidebar{
 	padding-bottom:35px;
 }
+/*
 .panel-leftsidebar .btn-collapse{
 	position:absolute;
 	bottom:0;
 	z-index:9999;
 }
+*/
 .btn-collapse span{
 	vertical-align:middle;
 }
@@ -130,7 +141,7 @@
 .panel-leftsidebar a{
 	display:inline-block;
 	color:#000;
-	padding:0 15px 0 20px;
+	padding:0 15px;
 	height:35px;
 	line-height:35px;
 }
@@ -150,19 +161,69 @@
 	background:#4e7ac7;
 	color:#fff;
 }
-.panel-leftsidebar .active > a em,
-.panel-leftsidebar li a:hover em{
-	background:url(../images/right-caret.png) no-repeat;
-	width:12px;
-	height:35px;
-	display:inline-block;
-	position:absolute;
-	right:0;
-	top:0;
-}
 .panel-leftsidebar li ul li{
 	margin:10px 0 0;
 }
+
+
+.panel-leftsidebar a em{
+	background:url(../images/icons-black.png) no-repeat 0 -3px;
+	display:inline-block;
+	width:28px;
+	height:28px;
+	vertical-align:middle;
+	margin-right:5px;
+}
+.panel-leftsidebar .active > a em,
+.panel-leftsidebar a:hover em{
+	background:url(../images/icons.png) no-repeat 0 -3px;
+}
+
+.panel-leftsidebar .active .icon-info,
+.panel-leftsidebar a:hover .icon-info,
+.panel-leftsidebar a .icon-info{
+	background-position: 0 -43px;
+}
+.panel-leftsidebar .active .icon-comments,
+.panel-leftsidebar a:hover .icon-comments,
+.panel-leftsidebar a .icon-comments{
+	background-position: 0 -80px;
+}
+.panel-leftsidebar .active .icon-tag,
+.panel-leftsidebar a:hover .icon-tag,
+.panel-leftsidebar a .icon-tag{
+	background-position: 0 -124px;
+}
+.panel-leftsidebar .active .icon-pin,
+.panel-leftsidebar a:hover .icon-pin,
+.panel-leftsidebar a .icon-pin{
+	background-position: 0 -164px;
+}
+
+.panel-leftsidebar .active .icon-location,
+.panel-leftsidebar a:hover .icon-location,
+.panel-leftsidebar a .icon-location{
+	background-position: -2px -204px;
+}
+
+.panel-leftsidebar .active .icon-link,
+.panel-leftsidebar a:hover .icon-link,
+.panel-leftsidebar a .icon-link{
+	background-position: -2px -290px;
+}
+.panel-leftsidebar .active .icon-setting,
+.panel-leftsidebar a:hover .icon-setting,
+.panel-leftsidebar a .icon-setting{
+	background-position: 0 -330px;
+}
+.panel-leftsidebar .active .icon-users,
+.panel-leftsidebar a:hover .icon-users,
+.panel-leftsidebar a .icon-users{
+	background-position: -3px -370px;
+}
+
+
+
 .section-collapse{
 	background:url(../images/collapse.png) no-repeat left center;
 	display:inline-block;
@@ -253,8 +314,6 @@
 .notification-box{
 	border:1px solid;
 	padding:3px 25px;
-	min-height:30px;
-	max-width:245px;
 	font-size:12px;
 	vertical-align:middle;
 	float:right;
@@ -262,7 +321,13 @@
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+	width:80%;
 }
+
 
 .notification-box.last-item{
 	margin-bottom:0;
@@ -443,7 +508,7 @@
 }
 .large-thumb .inner-border-section{
 	min-height:200px;
-	background:url(../images/thumb-bg.png) no-repeat center 40%;
+	background:url(../images/thumb-bg.png) no-repeat center 40% #fff;
 	position:relative;
 	padding-bottom:33px;
 }
@@ -482,14 +547,14 @@
 .small-thumb .inner-border-section {
 	min-height:150px;
 	position:relative;
-	background:url(../images/for-slpash.png) no-repeat center 35%;
+	background:url(../images/for-slpash.png) no-repeat center 35% #fff;
 }
 .main-thumb .inner-border-section {
 	min-height:200px;
 	position:relative;
 }
 .thmub-for-logo .inner-border-section{
-	background:url(../images/for-logo.png) no-repeat center 35%;
+	background:url(../images/for-logo.png) no-repeat center 35% #fff;
 }
 
 .thumb-footer{
@@ -570,6 +635,9 @@
 	-webkit-box-shadow:0 0 1px 1px #DFDFDF;
 	box-shadow:0 0 1px 1px #DFDFDF;
 }
+.search-topic-form .last-item{
+	margin-bottom:0;
+}
 .btn-white-normal{
 	padding:5px 15px;
 }
@@ -588,9 +656,9 @@
 	border-top:1px solid #999;
 }
 .topic-post{
-	background:url(../images/left-border.png) repeat-y;
+	background:url(../images/left-border.png) repeat-y white;
 	color:#000;
-	padding-left:25px;
+	padding-left:20px;
 	border-top:none;
 	cursor:move;
 }
@@ -603,19 +671,41 @@
 	color:#999;
 }
 
-.post-edit{
+.map-edit{
+	padding:5px;
+	margin-bottom:15px;
+}
+.post-edit.last-item{
+	margin-bottom:0;
 }
 .for-edit,
 .for-delete,
 .for-active{
 	float:left;
-	width:60px;
+	width:20%;
 	margin-right:4px;
 }
 .for-active{
-	width:175px;
+	width:50%;
+}
+.for-action{
+	float:left;
+	width:24%;
+	margin-right:1%;
+}
+.topic-post .video-thumb{
+	float:left;
+	width:47px;
 }
 
+#panel-page .topic-post h2{
+	font-size:20px;
+	margin-bottom:5px;
+	line-height:1;
+}
+.topic-post .title-section{
+	margin-left:60px;
+}
 
 
 .tab-nav{
@@ -724,6 +814,9 @@
 	width:100%;
 	padding:10px;
 	height:auto;
+}
+.border-right-section input{
+	background:white;
 }
 .label-middle{
 	display:inline-block;
