@@ -81,16 +81,18 @@
 }
 .topic-left-section{
 	float:left;
-	width:45%;
+	width:49%;
 }
 
 .topic-right-section{
 	float:right;
-	width:50%;
+	width:49%;
 }
-
+.with-border{
+	border:1px solid #b2b2b2;
+}
 .panel-leftsidebar{
-	width:200px;
+	width:215px;
 	text-align:left;
 	position:absolute;
 	overflow:hidden;
@@ -161,6 +163,11 @@
 	background:#4e7ac7;
 	color:#fff;
 }
+.panel-leftsidebar .sub-nav li  a:hover,
+.panel-leftsidebar .sub-nav .active > a{
+	background:none;
+	color: #4e7ac7;
+}
 .panel-leftsidebar li ul li{
 	margin:10px 0 0;
 }
@@ -169,8 +176,8 @@
 .panel-leftsidebar a em{
 	background:url(../images/icons-black.png) no-repeat 0 -3px;
 	display:inline-block;
-	width:28px;
-	height:28px;
+	width:32px;
+	height:26px;
 	vertical-align:middle;
 	margin-right:5px;
 }
@@ -179,47 +186,91 @@
 	background:url(../images/icons.png) no-repeat 0 -3px;
 }
 
+
+
+
+/* icons */
+.icon-comments{ background-position: 0 0;} 
+.icon-glob{ background-position: 0 -34px;} 
+.icon-info{ background-position: 0 -71px;} 
+.icon-link{ background-position: 0 -106px;} 
+.icon-tag{ background-position: 0 -143px;} 
+.icon-location{ background-position: 0 -180px; } 
+.icon-pin-plus{ background-position: 0 -215px;} 
+.icon-pin{ background-position: 0 -256px; } 
+.icon-setting{ background-position: 0 -291px;} 
+.icon-star{ background-position: 0 -329px; } 
+.icon-upload{ background-position: 0 -366px;} 
+.icon-users{ background-position: 0 -402px; } 
+/*End*/
+
+
+
+.panel-leftsidebar .active .icon-star,
+.panel-leftsidebar a:hover .icon-star,
+.panel-leftsidebar a .icon-star{
+	background-position: 0 -329px;
+}
+.panel-leftsidebar .active .icon-glob,
+.panel-leftsidebar a:hover .icon-glob,
+.panel-leftsidebar a .icon-glob{
+	background-position: 0 -34px;
+}
+
+.panel-leftsidebar .active .icon-pin-plus,
+.panel-leftsidebar a:hover .icon-pin-plus,
+.panel-leftsidebar a .icon-pin-plus{
+	background-position: 0 -215px;
+}
+
+.panel-leftsidebar .active .icon-upload,
+.panel-leftsidebar a:hover .icon-upload,
+.panel-leftsidebar a .icon-upload{
+	background-position: 0 -366px;
+}
+
+
 .panel-leftsidebar .active .icon-info,
 .panel-leftsidebar a:hover .icon-info,
 .panel-leftsidebar a .icon-info{
-	background-position: 0 -43px;
+	background-position: 0 -71px;
 }
 .panel-leftsidebar .active .icon-comments,
 .panel-leftsidebar a:hover .icon-comments,
 .panel-leftsidebar a .icon-comments{
-	background-position: 0 -80px;
+	background-position: 0 0;
 }
 .panel-leftsidebar .active .icon-tag,
 .panel-leftsidebar a:hover .icon-tag,
 .panel-leftsidebar a .icon-tag{
-	background-position: 0 -124px;
+	background-position: 0 -143px;
 }
 .panel-leftsidebar .active .icon-pin,
 .panel-leftsidebar a:hover .icon-pin,
 .panel-leftsidebar a .icon-pin{
-	background-position: 0 -164px;
+	background-position: 0 -256px;
 }
 
 .panel-leftsidebar .active .icon-location,
 .panel-leftsidebar a:hover .icon-location,
 .panel-leftsidebar a .icon-location{
-	background-position: -2px -204px;
+	background-position: 0 -180px;
 }
 
 .panel-leftsidebar .active .icon-link,
 .panel-leftsidebar a:hover .icon-link,
 .panel-leftsidebar a .icon-link{
-	background-position: -2px -290px;
+	background-position: 0 -106px;
 }
 .panel-leftsidebar .active .icon-setting,
 .panel-leftsidebar a:hover .icon-setting,
 .panel-leftsidebar a .icon-setting{
-	background-position: 0 -330px;
+	background-position: 0 -291px;
 }
 .panel-leftsidebar .active .icon-users,
 .panel-leftsidebar a:hover .icon-users,
 .panel-leftsidebar a .icon-users{
-	background-position: -3px -370px;
+	background-position: 0 -402px;
 }
 
 
@@ -513,10 +564,11 @@
 	padding-bottom:33px;
 }
 .small-thumb{
-	width:154px;
+	width:35%;
 	float:left;
 	margin-right:9px;
 	font-size:12px;
+	margin-bottom:9px;
 }
 .small-thumb2{
 	float:left;
@@ -639,7 +691,7 @@
 	margin-bottom:0;
 }
 .btn-white-normal{
-	padding:5px 15px;
+	padding:5px 15px 6px;
 }
 .title-status {
 	letter-spacing:inherit;
@@ -672,7 +724,7 @@
 }
 
 .map-edit{
-	padding:5px;
+	padding:5px 0;
 	margin-bottom:15px;
 }
 .post-edit.last-item{
@@ -682,11 +734,16 @@
 .for-delete,
 .for-active{
 	float:left;
-	width:20%;
-	margin-right:4px;
+	width:25%;
+	padding-right:4px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align:right;
 }
 .for-active{
 	width:50%;
+	text-align:left;
 }
 .for-action{
 	float:left;
@@ -696,6 +753,10 @@
 .topic-post .video-thumb{
 	float:left;
 	width:47px;
+}
+
+.mt-40{
+	margin-top:40px;
 }
 
 #panel-page .topic-post h2{

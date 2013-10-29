@@ -68,8 +68,8 @@
                 <li><a href="#indoor"><em class="icon-glob"></em> Indoor Maps</a></li>
                 <li><a href="#poi" class="parent-item"><em class="icon-tag"></em> POIs</a>
                 	<ul class="sub-nav">
-                        <li><a href="#upload-pois"><em></em> Upload POIs</a></li>
-		                <li><a href="#create-poi"><em></em> Create POIs</a></li>
+                        <li><a href="#upload-pois"><em class="icon-upload"></em> Upload POIs</a></li>
+		                <li><a href="#create-poi"><em class="icon-pin-plus"></em> Create POIs</a></li>
                     </ul>
                 </li>
                 <li><a href="#itineraries"><em class="icon-pin"></em> Itineraries</a></li>
@@ -474,7 +474,7 @@ map. The prmary map is the default map that the visitor will see when viewing ma
                 <a class="btn-collapse" href="#"><span>Hide</span><em></em></a>
             </div>
             <p><img src="images/facility_marker.png" alt=""> Drag the building icon onto the map to show the location of indoor maps</p>
-            <p><img src="images/map-large.png" alt=""></p>
+            <p><img class="with-border" src="images/map-large.png" alt=""></p>
             <div class="topic-left-section">
             <form class="search-topic-form">
                 <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter title of a new topic here'}" onfocus="if(this.value=='Enter title of a new topic here'){this.value=''}" value="Enter title of a new topic here">
@@ -493,74 +493,105 @@ map. The prmary map is the default map that the visitor will see when viewing ma
             </form>
             </div>
             <div class="cl"></div>
+            <div class="clearfix">
+                <div class="small-thumb">
+                    <div class="border-right-section">
+                        <div class="inner-border-section">
+                            <div class="thumb-footer clearfix">
+                                <button title="Remove from Chrome" class="trash fr custom-appearance">
+                                    <span class="lid"></span>
+                                    <span class="can"></span>
+                                </button>
+                                <div class="cl"></div>
+                            </div>
+                        </div>
+                  </div>
+                  
+                </div>
+                <div class="topic-left-section">
+                    <form class="search-topic-form">
+                        <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter title of a new topic here'}" onfocus="if(this.value=='Enter title of a new topic here'){this.value=''}" value="Enter title of a new topic here">
+                    </form>
+                    <p class="label-bot center-text"><em>Tip: Make map titles short (e.g. First oor, Second oor, etc.)</em></p>
+                    <a href="#" class="btn-white btn-white-normal mt-40">Save Map</a>
+                </div>
+            </div>
             <div class="topic-left-section">
-	                <div class="topic-post box">
-                    	<div class="video-thumb">
-	                        <img  src="images/title-box.png" alt="">
-                        </div>
-                        <div class="title-section">
-                            <h2>Title</h2>
-                            <div class="post-edit clearfix">
-                                <div class="for-action">
-                                    <a href="#">Active</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Edit</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Delete</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Delete</a>
-                                </div>
-	                        </div>
-    					</div>
+                <div class="topic-post box">
+                    <div class="video-thumb">
+                        <img  src="images/title-box.png" alt="">
                     </div>
-                    <div class="topic-post box">
-                    	<div class="video-thumb">
-	                        <img  src="images/title-box.png" alt="">
-                        </div>
-                        <div class="title-section">
-                            <h2>Title</h2>
-                            <div class="post-edit clearfix">
-                                <div class="for-action">
-                                    <a href="#">Active</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Edit</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Delete</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Delete</a>
-                                </div>
-	                        </div>
-    					</div>
+                    <div class="title-section">
+                        <h2>Title</h2>
+                        <div class="post-edit clearfix">
+                            <div class="for-action">
+                                <a href="#">Active</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Edit</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Delete</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Delete</a>
+                            </div>
+                        </div><!-- post-edit -->
+                    </div><!-- title-section -->
+                </div><!-- topic-post -->
+                <div class="topic-post box">
+                    <div class="video-thumb">
+                        <img  src="images/title-box.png" alt="">
                     </div>
-                    <div class="topic-post box">
-                    	<div class="video-thumb">
-	                        <img  src="images/title-box.png" alt="">
+                    <div class="title-section">
+                        <h2>Title</h2>
+                        <div class="post-edit clearfix">
+                            <div class="for-action">
+                                <a href="#">Active</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Edit</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Delete</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Delete</a>
+                            </div>
                         </div>
-                        <div class="title-section">
-                            <h2>Title</h2>
-                            <div class="post-edit clearfix">
-                                <div class="for-action">
-                                    <a href="#">Active</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Edit</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Delete</a>
-                                </div>
-                                <div class="for-action">
-                                    <a href="#">Delete</a>
-                                </div>
-	                        </div>
-    					</div>
                     </div>
                 </div>
+                <div class="topic-post box">
+                    <div class="video-thumb">
+                        <img  src="images/title-box.png" alt="">
+                    </div>
+                    <div class="title-section">
+                        <h2>Title</h2>
+                        <div class="post-edit clearfix">
+                            <div class="for-action">
+                                <a href="#">Active</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Edit</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Delete</a>
+                            </div>
+                            <div class="for-action">
+                                <a href="#">Delete</a>
+                            </div>
+                        </div><!-- post-edit -->
+                    </div><!-- title-section -->
+                </div><!-- topic-post -->
+            </div><!-- topic-left-section -->
+            <div class="topic-right-section">
+            	<p><em>Tip: If you have more than one map, you can drag them
+up or down to place them in any order you like.</em></p>
+                <p><em>Tip: The primary map will be the rst map the visitor sees
+when exploring this building.</em></p>
+            </div>
+            
+                
         </div>
         <div class="content-area" id="poi">
         	<h1>POIs</h1>
