@@ -32,7 +32,7 @@ $(function () {
 						'margin-left' :	220
 					},300);
 					$('.panel-leftsidebar').animate({
-							width:	200												
+							width:	215												
 						},300)
 				}
 				else{

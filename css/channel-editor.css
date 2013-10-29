@@ -174,7 +174,7 @@
 
 
 .panel-leftsidebar a em{
-	background:url(../images/icons-black.png) no-repeat 0 -3px;
+	background:url(../images/icons-black.png) no-repeat 0 0;
 	display:inline-block;
 	width:32px;
 	height:26px;
@@ -183,13 +183,25 @@
 }
 .panel-leftsidebar .active > a em,
 .panel-leftsidebar a:hover em{
-	background:url(../images/icons.png) no-repeat 0 -3px;
+	background:url(../images/icons.png) no-repeat 0 0;
 }
 
 
 
 
 /* icons */
+[class*="icon-"]{
+	background-image:url(../images/icons-black.png);	
+	display:inline-block;
+	width:32px;
+	height:26px;
+	vertical-align:middle;
+}
+
+[class*="icon-"].white-icon{
+	background-image:url(../images/icons.png);
+}
+
 .icon-comments{ background-position: 0 0;} 
 .icon-glob{ background-position: 0 -34px;} 
 .icon-info{ background-position: 0 -71px;} 
@@ -890,7 +902,7 @@
 
 .map-tab-nav{
 	margin:0;
-	border-bottom:8px solid #4e7ac7;
+	border-bottom:8px solid #212727;
 }
 .map-tab-nav li:first-child{
 	margin-left:5px;
@@ -910,7 +922,7 @@
 }
 .map-tab-nav .active a{
 	text-decoration:none;
-	background:#4e7ac7;
+	background:#212727;
 	color:#fff;
 }
 .map{
@@ -1156,6 +1168,9 @@ html[dir='rtl'] .trash:hover > .lid {
   margin-top: 4px;
   width: 11px;
 }
+.map-sction{
+	position:relative;
+}
 #extension-settings .trash{
 -webkit-transition: opacity 200ms;
 height: 22px;
@@ -1164,4 +1179,49 @@ position: absolute;
 right: 0;
 top: 3px;
 vertical-align: middle;
+}
+
+
+/* new Add */
+.poi-title-list{
+	position:relative;
+}
+.poi-title-list .topic-post{
+	background:white;
+	padding:6px 15px 6px;
+	
+}
+.poi-title-list .checkbox{
+	width:auto;
+	height:auto;
+	float:left;
+}
+.poi-title-list .topic-content{
+	margin-left: 25px;
+}
+.poi-title-list .poi-title-header{
+	padding:6px 15px 6px;
+	background:#212727;
+}
+.poi-title-list .poi-title-header .checkbox{
+	margin-right: 50px;
+}
+.poi-title-list .poi-title-header select{
+	background:none;
+	border:none;
+	color: white;
+}
+.poi-title-list .menu-section{
+	float:right;
+	position:relative;
+}
+.poi-title-list .menu-section > a{
+	color: white;
+	
+}
+.poi-title-list .menu-section .menu-list{
+	right:-15px;
+	top:31px;
+	left: auto;
+
 }

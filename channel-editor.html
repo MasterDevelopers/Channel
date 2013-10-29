@@ -672,71 +672,165 @@ when exploring this building.</em></p>
                 </DIV>
                 <div class="clearfix create-pois">
                 	<div class="left-section">
+                        <div class="map-sction">
+                            <div class="map">
+                                <img src="images/map2.png" alt="Map">
+                            </div>
+                            <ul class="map-nav-inner clearfix">
+                                <li>
+                                    <a href="#" class="menu-btn">Drag and drop 
+                                        <img src="images/question-mark.png" alt="">
+                                    </a>
+                                    <ul class="menu-list short">
+                                        <li><a href="#"><img src="images/parking_marker.png" alt=""> Tour Stops</a>
+                                            <ul class="submenu-list">
+                                                <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Noteworthy</a></li>
+                                                <li><a href="#"><img src="images/attraction_marker.png" alt=""> Attractions</a></li>
+                                                <li><a href="#"><img src="images/activity_marker.png" alt=""> Activities</a></li>
+                                                <li><a href="#"><img src="images/food_marker.png" alt=""> Shopping</a></li>
+                                                <li><a href="#"><img src="images/accommodations_marker.png" alt=""> Food & Drink</a></li>
+                                                <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Accommodations</a></li>
+                                                <li><a href="#"><img src="images/other_marker.png" alt=""> Other</a></li>
+                                                <li><a href="#"><img src="images/parking_marker.png" alt=""> Parking</a></li>
+                                                <li><a href="#"><img src="images/toilet_marker.png" alt=""> Public Toilet</a></li>
+                                                <li><a href="#"><img src="images/food_marker.png" alt=""> Exhibit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><img src="images/parking_marker.png" alt=""> Audio Trigger</a></li>
+                                        <li class="last-item"><a href="#"><img src="images/parking_marker.png" alt=""> Building</a></li>
+                                    </ul>								                            	
+                                </li>
+                                <li class="long"><a href="#" class="menu-btn">Place with address  
+                                    <img src="images/question-mark.png" alt="">
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li>
+                                            <form class="search-place-form">
+                                                <p>Place by Address</p>
+                                                <label>Street</label>
+                                                <input type="text" value=""><br>
+                                                <label>city</label>
+                                                <input type="text" value=""><br>
+                                                <label>State or Province</label>
+                                                <input class="input-mini" type="text" value=""><br>
+                                                <label>Country</label>
+                                                <input type="text" value="" class="input-mini"><br>
+                                                <p>Place by Latitude &amp; Longitude</p>
+                                                <label>Latitude</label>
+                                                <input class="input-mini"  type="text" value=""><br>
+                                                <label>Longitude</label>
+                                                <input class="input-mini"  type="text" value=""><br>
+                                                <p>Choose Marker Type to Place</p>
+                                                <div class="center-text">
+                                                <select>
+                                                    <option>Tour Stop</option>
+                                                </select>
+                                                <input type="submit" class="submit" value="Place It">
+                                                </div>
+                                                
+                                            </form>
+                                        </li>
+                                    </ul>								                            	
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-section">
                     <ul class="map-tab-nav tab-nav">
-                    	<li class="active"><a href="#map-view">Map View</a></li>
+                    	<li class="active"><a href="#tab-1">Map View</a></li>
                         <li><a href="#list-view">List View</a></li>
                     </ul>
-                    <div class="tab-content" id="map-view" style="display:block">
-                    	<div class="map">
-                        	<img src="images/map2.png" alt="Map">
+                    <div class="tab-content" id="tab-1" style="display:block">
+                        <div class="poi-title-list">
+                        <div class="poi-title-header clearfix">
+	                        <div class="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            <select>
+                            	<option>Sort By</option>
+                            </select>
+                            <div class="menu-section">
+                                    <a class="menu-btn" href="#">Batch Edit 
+                                        <span class="icon-setting white-icon"></span>
+                                    </a>
+                                    <ul class="menu-list short">
+                                        <li><a href="#"><img alt="" src="images/parking_marker.png"> Tour Stops</a>
+                                            <ul class="submenu-list">
+                                                <li><a href="#"><img alt="" src="images/noteworthy_marker.png"> Noteworthy</a></li>
+                                                <li><a href="#"><img alt="" src="images/attraction_marker.png"> Attractions</a></li>
+                                                <li><a href="#"><img alt="" src="images/activity_marker.png"> Activities</a></li>
+                                                <li><a href="#"><img alt="" src="images/food_marker.png"> Shopping</a></li>
+                                                <li><a href="#"><img alt="" src="images/accommodations_marker.png"> Food &amp; Drink</a></li>
+                                                <li><a href="#"><img alt="" src="images/noteworthy_marker.png"> Accommodations</a></li>
+                                                <li><a href="#"><img alt="" src="images/other_marker.png"> Other</a></li>
+                                                <li><a href="#"><img alt="" src="images/parking_marker.png"> Parking</a></li>
+                                                <li><a href="#"><img alt="" src="images/toilet_marker.png"> Public Toilet</a></li>
+                                                <li><a href="#"><img alt="" src="images/food_marker.png"> Exhibit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><img alt="" src="images/parking_marker.png"> Audio Trigger</a></li>
+                                        <li class="last-item"><a href="#"><img alt="" src="images/parking_marker.png"> Building</a></li>
+                                    </ul>								                            	
+                                </div>
                         </div>
-                        <ul class="map-nav-inner clearfix">
-	                        <li>
-                                <a href="#" class="menu-btn">Drag and drop 
-                                    <img src="images/question-mark.png" alt="">
-                                </a>
-								<ul class="menu-list short">
-                                	<li><a href="#"><img src="images/parking_marker.png" alt=""> Tour Stops</a>
-                                    	<ul class="submenu-list">
-                                        	<li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Noteworthy</a></li>
-                                            <li><a href="#"><img src="images/attraction_marker.png" alt=""> Attractions</a></li>
-                                            <li><a href="#"><img src="images/activity_marker.png" alt=""> Activities</a></li>
-                                            <li><a href="#"><img src="images/food_marker.png" alt=""> Shopping</a></li>
-                                            <li><a href="#"><img src="images/accommodations_marker.png" alt=""> Food & Drink</a></li>
-                                            <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Accommodations</a></li>
-                                            <li><a href="#"><img src="images/other_marker.png" alt=""> Other</a></li>
-                                            <li><a href="#"><img src="images/parking_marker.png" alt=""> Parking</a></li>
-                                            <li><a href="#"><img src="images/toilet_marker.png" alt=""> Public Toilet</a></li>
-                                            <li><a href="#"><img src="images/food_marker.png" alt=""> Exhibit</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"><img src="images/parking_marker.png" alt=""> Audio Trigger</a></li>
-                                    <li class="last-item"><a href="#"><img src="images/parking_marker.png" alt=""> Building</a></li>
-                                </ul>								                            	
-                            </li>
-                            <li class="long"><a href="#" class="menu-btn">Place with address  
-                            	<img src="images/question-mark.png" alt="">
-                                </a>
-								<ul class="menu-list">
-                                	<li>
-                                        <form class="search-place-form">
-                                            <p>Place by Address</p>
-                                            <label>Street</label>
-                                            <input type="text" value=""><br>
-                                            <label>city</label>
-                                            <input type="text" value=""><br>
-                                            <label>State or Province</label>
-                                            <input class="input-mini" type="text" value=""><br>
-                                            <label>Country</label>
-                                            <input type="text" value="" class="input-mini"><br>
-                                            <p>Place by Latitude &amp; Longitude</p>
-                                            <label>Latitude</label>
-                                            <input class="input-mini"  type="text" value=""><br>
-                                            <label>Longitude</label>
-                                            <input class="input-mini"  type="text" value=""><br>
-                                            <p>Choose Marker Type to Place</p>
-                                            <div class="center-text">
-                                            <select>
-                                            	<option>Tour Stop</option>
-                                            </select>
-                                            <input type="submit" class="submit" value="Place It">
-                                            </div>
-                                            
-                                        </form>
-                                    </li>
-                                </ul>								                            	
-                            </li>
-                        </ul>
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div>
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div>
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-content" id="list-view">
                     	<table class="table-black-head" width="100%" border="1" cellpadding="0" cellspacing="0">
@@ -778,184 +872,6 @@ when exploring this building.</em></p>
                         </table>
 
                     </div>
-                    </div>
-                    <div class="right-section">
-                    <DIV class="topic-title">
-                    
-                    <input type="text" value="Enter POI Title Here" onFocus="if(this.value=='Enter POI Title Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter POI Title Here'}" class="liberty">
-                    
-                    
-                    <P class="title-status">
-                    	Status:
-                        <a href="#" class="status">Inactive</a>
-                    </P>
-                   </DIV>
-                    <div class="textarea-section border-right-section">
-                        <div class="textarea-header clearfix">
-                            <img src="images/textarea-header.png" alt="">
-                            <img src="images/textarea-header.png" alt="">
-                            <img src="images/textarea-header.png" alt="">
-                            <img src="images/textarea-header.png" alt="">
-                            <img src="images/textarea-header.png" alt="">
-                        </div>
-                        <textarea cols="30" rows="4" onFocus="if(this.value=='Enter POI text description here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter POI text description here'}" >Enter POI text description here</textarea>
-                        
-                    </div>
-                    <div class="large-thumb">
-                      <div class="border-right-section">
-                            <div class="inner-border-section">
-                                <div class="thumb-footer clearfix">
-                                    <button class="trash fr custom-appearance" title="Remove from Chrome">
-                                        <span class="lid"></span>
-                                        <span class="can"></span>
-                                    </button>
-                                    <div class="cl"></div>
-                                </div>
-                            </div>
-                    </div>
-	                    <p><span class="label-bot">Channel image tips</span></p>
-                    </div>
-				<form class="contact-form clearfix">
-	                <div class="thumb-header">
-	                    	<h3>Additional Media</h3>
-                        </div>
-                        <a href="#" class="btn-collapse active"><span>Show </span><em></em></a>
-	               <div class="contact-form-collapse">
-                    <div class="small-thumb">
-                        <div class="border-right-section">
-                            <div class="inner-border-section">
-                                <div class="thumb-footer clearfix">
-                                    <button class="trash fr custom-appearance" title="Remove from Chrome">
-                                        <span class="lid"></span>
-                                        <span class="can"></span>
-                                    </button>
-                                    <div class="cl"></div>
-                                </div>
-                            </div>
-                        </div>
-	                    <p><span class="label-bot">Channel image tips</span></p>
-                    </div>
-                    <div class="small-thumb">
-                        <div class="border-right-section">
-                            <div class="inner-border-section">
-                                <div class="thumb-footer clearfix">
-                                    <button class="trash fr custom-appearance" title="Remove from Chrome">
-                                        <span class="lid"></span>
-                                        <span class="can"></span>
-                                    </button>
-                                    <div class="cl"></div>
-                                </div>
-                            </div>
-                        </div>
-	                    <p><span class="label-bot">Channel image tips</span></p>
-                    </div>
-</div>
-
-					</form>
-                    <form class="contact-form clearfix">
-              <div class="thumb-header">
-	                    	<h3>Admission Prices</h3>
-                        </div>
-                        <a href="#" class="btn-collapse active"><span>Show </span><em></em></a>
-	               <div class="contact-form-collapse">
-                    <div class="textarea-section border-right-section">
-                        <div class="textarea-header clearfix">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                        </div>
-                        <textarea rows="4" cols="30">Use this eld to indicate any
-admission prices</textarea>
-                    </div>
-					</div>
-
-					</form>
-                    <form class="contact-form clearfix">
-              <div class="thumb-header">
-	                    	<h3>Hours of Operation</h3>
-                        </div>
-                        <a href="#" class="btn-collapse active"><span>Show </span><em></em></a>
-	               <div class="contact-form-collapse">
-                    <div class="textarea-section border-right-section">
-                        <div class="textarea-header clearfix">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                            <img alt="" src="images/textarea-header.png">
-                        </div>
-                        <textarea rows="4" cols="30">Use this eld to indicate
-hours of operation</textarea>
-                    </div>
-					</div>
-
-					</form>                    
-                    <form class="contact-form">
-                   	  <div class="thumb-header">
-	                    	<h3>Contact Information</h3>
-                        </div>
-                        <a href="#" class="btn-collapse active"><span>Show</span> <em></em></a>
-                        <div class="contact-form-collapse">
-                            <p>
-                                    <input type="text" value="Address 1" onFocus="if(this.value=='Address 1'){this.value=''}" onBlur="if(this.value==''){this.value='Address 1'}">
-                                </p>
-                                <p><input type="text" value="Address 2" onFocus="if(this.value=='Address 2'){this.value=''}" onBlur="if(this.value==''){this.value='Address 2'}"></p>
-                                <p>
-                                <input type="text" value="City" onFocus="if(this.value=='City'){this.value=''}" onBlur="if(this.value==''){this.value='City'}">
-                                <select class="select-bar">
-                                    <option>-state-</option>
-                                </select>
-                                <input type="text" value="Postal Code" onFocus="if(this.value=='Postal Code'){this.value=''}" onBlur="if(this.value==''){this.value='Postal Code'}">
-                                </p>
-                                <p>
-                                <input type="text" value="Provence" onFocus="if(this.value=='Provence'){this.value=''}" onBlur="if(this.value==''){this.value='Provence'}"></p>
-                                <p>
-                                <select class="block-level select-bar">
-                                    <option>-state-</option>
-                                </select>
-                                </p>
-                                <p>
-                                <input type="text" value="Phone" onFocus="if(this.value=='Phone'){this.value=''}" onBlur="if(this.value==''){this.value='Phone'}"></p>
-                                <p>
-                                <input type="text" value="Website" onFocus="if(this.value=='Website'){this.value=''}" onBlur="if(this.value==''){this.value='Website'}"></p>
-                                <p><input type="text" value="Email" onFocus="if(this.value=='Email'){this.value=''}" onBlur="if(this.value==''){this.value='Email'}"></p>
-                        </div>
-                        </form> 
-
-                        <form class="contact-form">
-                      <div class="thumb-header">
-	                    	<h3>Search Tags</h3>
-                        </div>
-                        <a href="#" class="btn-collapse active"><span>Show</span> <em></em></a>
-                        <div class="form-pin-section form-pin-section2">
-                        	<div class="contact-form-collapse">
-                            	
-                                <input type="text" value=" "><a href="#" class="btn-white">Add</a>
-                                <p class="tag-text"><img src="images/tag.png" alt="tag-icon"><span>Tag text</span></p>
-                            </div>
-                        </div>
-                    </form>
-                    <form class="contact-form">
-                      <div class="thumb-header">
-	                    	<h3>Links</h3>
-                        </div>
-                        <a href="#" class="btn-collapse active"><span>Show</span> <em></em></a>
-                        <div class="form-pin-section form-pin-section2">
-                        	<div class="contact-form-collapse">
-                            	<h3>MyTourGuide links</h3>
-                                <p><small>Enter the MyTourGuide Code for the tour or channel you wish
-to link to</small></p>
-                                <p><input type="text" value=""><a href="#" class="btn-white">Add</a></p>
-                                <p class="tag-text">
-                                	<img src="images/tag.png" alt="tag-icon">
-                                    <span>YouTube link</span>
-                                </p>
-                                <input type="text" value=""><a href="#" class="btn-white">Add</a>
-                            </div>
-                        </div>
-                    </form>
                     </div>
                 </div>
         </div>
