@@ -10,6 +10,15 @@
 	text-align:left;
 	position:static;
 }
+#panel-page h3{
+	font-size:19px;
+	margin:0 0 10px;
+}
+
+#panel-page h4{
+	font-size:15px;
+	margin:0 0 10px;
+}
 
 #panel-page p,
 #panel-page label{
@@ -348,9 +357,11 @@
 	float:left;
 	width:55%;
 }
+	#itineraries .left-section,
 	.create-pois .left-section{
 		width:60%;
 	}
+	#itineraries .right-section,
 	.create-pois .right-section{
 		width:38%;
 	}
@@ -1047,6 +1058,9 @@
 	cursor:pointer;
 	padding:2px 4px;
 }
+input{
+	vertical-align:middle;
+}
 .search-place-form .input-mini{
 	width:65px;
 }
@@ -1098,8 +1112,10 @@ body .liberty{
 	box-sizing:border-box;
 }
 .map img{
+	display:block;
 	width:100%;
 }
+
 
 
 .trash {
@@ -1170,7 +1186,23 @@ html[dir='rtl'] .trash:hover > .lid {
 }
 .map-sction{
 	position:relative;
+	border:1px solid #393939;
 }
+.map-footer{
+	background: url(../images/map-footer.png) repeat-x left bottom white;
+	border:1px solid #adadad;
+	padding: 8px 8px 0;
+	}
+.map-footer span{
+	display:inline-block;
+	min-width:19%;
+	font-size:12px;
+	
+}
+.map-footer{
+	
+}
+
 #extension-settings .trash{
 -webkit-transition: opacity 200ms;
 height: 22px;
@@ -1224,4 +1256,31 @@ vertical-align: middle;
 	top:31px;
 	left: auto;
 
+}
+
+.placeholder-160{
+	background:#919191;
+	display:block;
+}
+.placeholder-160{
+	height:160px;
+}
+.topic-left-section-2{
+	width: 80%;
+	float:none;
+	margin-bottom:15px;
+}
+.topic-left-section-2 .video-thumb{
+	width:30px;
+}
+.topic-left-section-2 .title-section{
+	margin-left:35px;
+}
+.topic-left-section-2 .topic-post{
+	background:white;
+	border-width:0 0 1px;
+}
+.white-bg{
+	background:white;
+	padding:15px;
 }

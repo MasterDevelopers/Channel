@@ -194,7 +194,7 @@
             	<img class="video-thumb"  src="images/videothumb.png" alt="">
                 <span>Video Tutorial</span>
                 </div>
-                <a href="#" class="btn-collapse"><span>Hide</span><em></em></a>
+                <a href="#" class="btn-collapse"><span>Hide</span> <em></em></a>
             </div>
             <div class="channel-wrap clearfix">
           <div class="left-section">
@@ -332,7 +332,7 @@
             	<img alt="" src="images/videothumb.png" class="video-thumb">
                 <span>Video Tutorial</span>
                 </div>
-                <a class="btn-collapse" href="#"><span>Hide</span><em></em></a>
+                <a class="btn-collapse" href="#"><span>Hide</span> <em></em></a>
             </div>
             <div class="channel-wrap">
           <div class="topic-left-section">
@@ -471,10 +471,11 @@ map. The prmary map is the default map that the visitor will see when viewing ma
             	<img alt="" src="images/videothumb.png" class="video-thumb">
                 <span>Video Tutorial</span>
                 </div>
-                <a class="btn-collapse" href="#"><span>Hide</span><em></em></a>
+                <a class="btn-collapse" href="#"><span>Hide</span> <em></em></a>
             </div>
             <p><img src="images/facility_marker.png" alt=""> Drag the building icon onto the map to show the location of indoor maps</p>
             <p><img class="with-border" src="images/map-large.png" alt=""></p>
+            
             <div class="topic-left-section">
             <form class="search-topic-form">
                 <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter title of a new topic here'}" onfocus="if(this.value=='Enter title of a new topic here'){this.value=''}" value="Enter title of a new topic here">
@@ -654,8 +655,8 @@ when exploring this building.</em></p>
         <div class="content-area" id="create-poi">
         	<h2>POIs</h2>
 
-            <DIV class=video-wrapper>
-            	<DIV class=video-section>
+            <div class=video-wrapper>
+            	<div class=video-section>
                 	
                     <div class="poi-section">
                         <p>
@@ -667,14 +668,34 @@ when exploring this building.</em></p>
                         </div>
                     
                 	<IMG class="video-thumb" alt="" src="images/videothumb.png">
-                    <SPAN>Video Tutorial</SPAN> </DIV>
-                    <a href="#" class="btn-collapse"><span>Collapse</span> <em></em></a>
+                    <SPAN>Video Tutorial</SPAN> </div>
+                    <a href="#" class="btn-collapse"><span>Hide</span> <em></em></a>
                 </DIV>
                 <div class="clearfix create-pois">
                 	<div class="left-section">
                         <div class="map-sction">
                             <div class="map">
                                 <img src="images/map2.png" alt="Map">
+                            </div>
+                            <div class="map-footer">
+                            	<p class="fr last-para"><a href="#" class="btn-white">Select All</a>
+                                <a href="#" class="btn-white">Clear All</a></p>
+                            	<p>Filters (selections will appear on map and in list)</p>
+                                <div class="cl"></div>
+                                <p>
+                                	<span><input type="checkbox"><label>Active POIs</label></span>
+                                    <span><input type="checkbox"> <label>Inactive POIs</label></span>
+                                    <span><input type="checkbox"> <label>Activities</label></span>
+                                    <span><input type="checkbox"> <label>Attractions</label></span>
+                                    <span><input type="checkbox"> <label>Accomodations</label></span>
+                                    <span><input type="checkbox"> <label>Exhibits</label></span>
+                                    <span><input type="checkbox"> <label>Food & Drink</label></span>
+                                    <span><input type="checkbox"> <label>Noteworthy</label></span>
+                                    <span><input type="checkbox"> <label>Other</label></span>
+                                    <span><input type="checkbox"> <label>Parking</label></span>
+                                    <span><input type="checkbox"> <label>Public Toilets</label></span>
+                                    <span><input type="checkbox"> <label>Shopping</label></span>
+                                </p>
                             </div>
                             <ul class="map-nav-inner clearfix">
                                 <li>
@@ -791,7 +812,7 @@ when exploring this building.</em></p>
                                         </div>
                                     </div>
 								</div>
-                            </div>
+                            </div><!-- topic-post -->
                             <div class="topic-post box">
                                 <div class="checkbox">
                                 	<input type="checkbox">
@@ -810,7 +831,7 @@ when exploring this building.</em></p>
                                         </div>
                                     </div>
 								</div>
-                            </div>
+                            </div><!-- topic-post -->
                             <div class="topic-post box">
                                 <div class="checkbox">
                                 	<input type="checkbox">
@@ -829,7 +850,89 @@ when exploring this building.</em></p>
                                         </div>
                                     </div>
 								</div>
-                            </div>
+                            </div><!-- topic-post -->
+                            
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div><!-- topic-post -->
+                            
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div><!-- topic-post -->
+                            
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div><!-- topic-post -->
+                            
+                            
+                            <div class="topic-post box">
+                                <div class="checkbox">
+                                	<input type="checkbox">
+                                </div>
+                                <div class="topic-content">
+                                    <h2>POI Title</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Category</a>
+                                        </div>
+                                        <div class="for-delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                        <div class="for-edit">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                    </div>
+								</div>
+                            </div><!-- topic-post -->
+                            
                         </div>
                     </div>
                     <div class="tab-content" id="list-view">
@@ -878,6 +981,104 @@ when exploring this building.</em></p>
 
         <div class="content-area" id="itineraries">
         	<h1>Itineraries</h1>
+            <p>Do you have any suggested itineraries that you would like to feature in your channel? To do so, simply select the itinerary and set its status to “included”. If you want to exclude the itinerary from your channel, change its status to “excluded”.</p>
+<p>To create a new suggested itinerary, click the “New Itinerary” button. Note: this will open the Itinerary Editor in a new browser window. When you return to the Channel Editor, you will need to refresh the page to see your new itinerary in the list. Also keep in mind that when you create a new itinerary, you can set its visibility to public or private. Visitors will only be able to see your itinerary if visibility is set to “public”.</p>
+			<div class="video-wrapper">
+            	<div class="video-section">
+            	<img class="video-thumb" src="images/videothumb.png" alt="">
+                <span>Video Tutorial</span>
+                </div>
+                <a href="#" class="btn-collapse"><span>Hide</span> <em></em></a>
+            </div><!-- video-wrapper -->
+            <div class="clearfix">
+            	<div class="left-section">
+                	<div class="table-section">
+                    	<div class="table-header clearfix">
+                        	<h4>Your Suggested Itineraries</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="white-bg">
+                        <h3>Itinerary Title</h3>
+                        <p class="last-para"><label>Channel Status: </label> <a href="#">Included</a><br>
+                            <label>Visibility Setting:  </label> <a href="#">Public</a><br>
+    <a href="#" class="btn-white btn-white-normal">Open in Explorer</a> <a href="#" class="btn-white btn-white-normal">Edit Itinerary</a></p>
+                        <span class="placeholder-160"></span>
+                        <p>Description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+                        <h3>Day 1</h3>
+                        <div class="topic-left-section topic-left-section-2">
+                            <div class="topic-post box">
+                                <div class="video-thumb">
+                                    <img alt="" src="images/attraction_marker.png">
+                                </div>
+                                <div class="title-section">
+                                    <h2>Title of item</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Type of item</a>
+                                        </div>
+                                        <div class="for-action">
+                                            <a href="#">1:00 PM</a>
+                                        </div>
+                                    </div><!-- post-edit -->
+                                </div><!-- title-section -->
+                            </div><!-- topic-post -->
+                            <div class="topic-post box">
+                                <div class="video-thumb">
+                                    <img alt="" src="images/attraction_marker.png">
+                                </div>
+                                <div class="title-section">
+                                    <h2>Title of item</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Type of item</a>
+                                        </div>
+                                        <div class="for-action">
+                                            <a href="#">1:00 PM</a>
+                                        </div>
+                                    </div><!-- post-edit -->
+                                </div><!-- title-section -->
+                            </div><!-- topic-post -->
+                            <div class="topic-post box">
+                                <div class="video-thumb">
+                                    <img alt="" src="images/attraction_marker.png">
+                                </div>
+                                <div class="title-section">
+                                    <h2>Title of item</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Type of item</a>
+                                        </div>
+                                        <div class="for-action">
+                                            <a href="#">1:00 PM</a>
+                                        </div>
+                                    </div><!-- post-edit -->
+                                </div><!-- title-section -->
+                            </div><!-- topic-post -->
+                        </div><!-- topic-left-section topic-left-section-2 -->
+                        <h3>Day 2</h3>
+                        <div class="topic-left-section topic-left-section-2">
+                            <div class="topic-post box">
+                                <div class="video-thumb">
+                                    <img alt="" src="images/attraction_marker.png">
+                                </div>
+                                <div class="title-section">
+                                    <h2>Title of item</h2>
+                                    <div class="post-edit clearfix">
+                                        <div class="for-active">
+                                            <a href="#">Type of item</a>
+                                        </div>
+                                        <div class="for-action">
+                                            <a href="#">1:00 PM</a>
+                                        </div>
+                                    </div><!-- post-edit -->
+                                </div><!-- title-section -->
+                            </div><!-- topic-post -->
+                        </div>
+                    </div><!-- white-bg -->
+                </div>
+            </div>
         </div>
         <div class="content-area" id="tours">
         	<h1>Tours</h1>
