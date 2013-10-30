@@ -10,6 +10,11 @@
 	text-align:left;
 	position:static;
 }
+#panel-page .tab-content ol{
+	padding-left:0;
+	list-style-position:inside;
+	
+}
 #panel-page h3{
 	font-size:19px;
 	margin:0 0 10px;
@@ -201,6 +206,7 @@
 /* icons */
 [class*="icon-"]{
 	background-image:url(../images/icons-black.png);	
+	background-repeat: no-repeat;
 	display:inline-block;
 	width:32px;
 	height:26px;
@@ -212,7 +218,7 @@
 }
 
 .icon-comments{ background-position: 0 0;} 
-.icon-glob{ background-position: 0 -34px;} 
+.icon-glob{ background-position: 4px -32px;} 
 .icon-info{ background-position: 0 -71px;} 
 .icon-link{ background-position: 0 -106px;} 
 .icon-tag{ background-position: 0 -143px;} 
@@ -1315,6 +1321,10 @@ vertical-align: middle;
 	background: linear-gradient(to bottom,#f9f9f9 0%,#ececec 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9',endColorstr='#ececec',GradientType=0);
 }
+.table-section a{
+	vertical-align:middle;
+	display:inline-block;
+}
 .table-section table.tablesorter tbody tr:nth-child(2n+1) td{
 	background: #f3f4f8;
 }
@@ -1329,4 +1339,17 @@ vertical-align: middle;
 .bold{
 	font-weight:bold;
 	
+}
+.text-right{
+	text-align:right;
+}
+.visibility-section span{
+	display:inline-block;
+	vertical-align:middle;
+}
+.visibility-section{
+}
+.visibility-section{
+}
+.visibility-section{
 }
