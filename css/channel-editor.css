@@ -167,6 +167,7 @@
 	list-style:none;
 	margin-bottom:10px;
 }
+
 .panel-leftsidebar a{
 	color:#000;
 	padding:0 15px;
@@ -179,6 +180,8 @@
 .sub-nav{
 	display:none;
 }
+
+
 .panel-leftsidebar .active > a,
 .panel-leftsidebar li  a:hover{
 	background:#4e7ac7;
@@ -193,7 +196,7 @@
 	margin:10px 0 0;
 }
 
-
+/*
 .panel-leftsidebar a em{
 	background:url(../images/icons-black.png) no-repeat 0 0;
 	display:inline-block;
@@ -207,23 +210,8 @@
 .panel-leftsidebar a:hover em{
 	background:url(../images/icons.png) no-repeat 0 0;
 }
+*/
 
-
-
-
-/* icons */
-[class*="icon-"]{
-	background-image:url(../images/icons-black.png);	
-	background-repeat: no-repeat;
-	display:inline-block;
-	width:32px;
-	height:26px;
-	vertical-align:middle;
-}
-
-[class*="icon-"].white-icon{
-	background-image:url(../images/icons.png);
-}
 
 .icon-comments{ background-position: 0 0;} 
 .icon-glob{ background-position: 4px -32px;} 
@@ -237,15 +225,52 @@
 .icon-star{ background-position: 0 -329px; } 
 .icon-upload{ background-position: 0 -366px;} 
 .icon-users{ background-position: 0 -402px; } 
+
+
+
+
+/* icons */
+.panel-leftsidebar a em,
+[class*="icon-"]{
+	background-image:url(../images/icons-black.png);	
+	background-repeat: no-repeat;
+	display:inline-block;
+	width:32px;
+	height:26px;
+	vertical-align:middle;
+}
+.panel-leftsidebar .active em,
+.panel-leftsidebar a:hover em,
+[class*="icon-"].white-icon{
+	background-image:url(../images/icons-white.png);
+}
+
+
+.icon-Itinerary{ background-position: 0 0; width: 29px; height: 19px; } 
+.icon-comments{ background-position: 0 -69px; width: 21px; height: 19px; } 
+.icon-glob{ background-position: 0 -138px; width: 22px; height: 22px; } 
+.icon-info{ background-position: 0 -210px; width: 20px; height: 20px; } 
+.icon-link{ background-position: 0 -280px; width: 23px; height: 22px; } 
+.icon-location-pin{ background-position: 0 -352px; width: 17px; height: 22px; } 
+.icon-location{ background-position: 0 -424px; width: 16px; height: 20px; } 
+.icon-lock{ background-position: 0 -494px; width: 20px; height: 28px; } 
+.icon-member{ background-position: 0 -572px; width: 26px; height: 19px; } 
+.icon-pin-plus{ background-position: 0 -641px; width: 27px; height: 26px; } 
+.icon-pin{ background-position: 0 -717px; width: 26px; height: 20px; } 
+.icon-setting{ background-position: 0 -787px; width: 23px; height: 23px; } 
+.icon-star{ background-position: 0 -860px; width: 22px; height: 22px; } 
+.icon-tours{ background-position: 0 -932px; width: 24px; height: 20px; } 
+.icon-upload{ background-position: 0 -1002px; width: 32px; height: 21px; } 
+.icon-users{ background-position: 0 -1073px; width: 28px; height: 22px; } 
+
+
+
 /*End*/
 
 
 
-.panel-leftsidebar .active .icon-star,
-.panel-leftsidebar a:hover .icon-star,
-.panel-leftsidebar a .icon-star{
-	background-position: 0 -329px;
-}
+
+/*
 .panel-leftsidebar .active .icon-glob,
 .panel-leftsidebar a:hover .icon-glob,
 .panel-leftsidebar a .icon-glob{
@@ -309,7 +334,7 @@
 }
 
 
-
+*/
 .section-collapse{
 	background:url(../images/collapse.png) no-repeat left center;
 	display:inline-block;
@@ -1337,6 +1362,13 @@ vertical-align: middle;
 .table-section table.tablesorter td{
 	padding:10px;
 }
+.table-section table.tablesorter th{
+	border:1px solid #b4b6c2 !important;
+}
+.table-section table.tablesorter td{
+	border-right:1px solid #cccccc;
+}
+
 .table-section table.tablesorter {
 	font-size:13px;
 }
