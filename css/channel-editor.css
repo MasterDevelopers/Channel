@@ -15,6 +15,12 @@
 	list-style-position:inside;
 	
 }
+
+#panel-page .tab-content .label{
+	display:inline-block;
+	min-width:150px;
+	text-align:right;
+}
 #panel-page h3{
 	font-size:19px;
 	margin:0 0 10px;
@@ -129,9 +135,12 @@
 	z-index:9999;
 	left:160px;
 	top: 65px;
+	height:19px;
+	width:20px;
 	background:white;
 	padding:5px 6px;
 	transition:all 0.4s ease 0s;
+	background:url(../images/menu.png) no-repeat center center #fff ;		
 }
 #panel-page .content-expaneded .show-sidebar{
 	left:20px;
@@ -139,9 +148,10 @@
     -moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+	background:url(../images/menu-left.png) no-repeat center center #fff;
 }
-.show-sidebar img{
-	vertical-align: inherit;
+.show-sidebar{
+	
 }
 
 .panel-leftsidebar{
@@ -192,6 +202,7 @@
 	vertical-align:middle;
 	margin-right:5px;
 }
+
 .panel-leftsidebar .active > a em,
 .panel-leftsidebar a:hover em{
 	background:url(../images/icons.png) no-repeat 0 0;
@@ -400,13 +411,17 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	height: auto;
+	height:38px;
 	width:80%;
 }
 
 
 .notification-box.last-item{
 	margin-bottom:0;
+}
+.right-input{
+	float:right;
+	width:60%;
 }
 .border-right-section{
 	border-right:3px solid #981B1E;
@@ -418,6 +433,7 @@
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
+	overflow:hidden;
 	-moz-box-shadow:0 0 1px 1px #DFDFDF;
 	-webkit-box-shadow:0 0 1px 1px #DFDFDF;
 	box-shadow:0 0 1px 1px #DFDFDF;
@@ -583,13 +599,18 @@
 	color:#000;
 }
 .large-thumb .inner-border-section{
-	min-height:200px;
+	min-height:260px;
 	background:url(../images/thumb-bg.png) no-repeat center 40% #fff;
 	position:relative;
 	padding-bottom:33px;
 }
+
+#travel .large-thumb .inner-border-section{
+	background:url(../images/main-image.png) no-repeat center 40% #fff;
+}
+
 .small-thumb{
-	width:35%;
+	width:45%;
 	float:left;
 	margin-right:9px;
 	font-size:12px;
@@ -667,7 +688,7 @@
 	width:100%;
 	border:1px solid #000;
 	padding:6px 4px 7px;
-	height: auto;
+	height: 38px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
@@ -696,6 +717,12 @@
 
 .search-topic-form{
 }
+input{
+	color: #999 !important;
+}
+input:focus{
+	color: #000 !important;
+}
 .search-topic-form .input-large{
 	width:100%;
 	height:auto;
@@ -704,7 +731,6 @@
 	letter-spacing:inherit;
 	font-size:20px;
 	margin-bottom:20px;
-	
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
@@ -951,12 +977,15 @@
 	background:#162424;	
 	z-index:999;	
 }
+.menu-section.fl,
 .map-nav-inner > li > a{
 	background:url(../images/caret-d.png) right 12px no-repeat;
 	padding:2px 18px 2px 4px;
 	font-size:15px !important;
 	display:inline-block;
+	 
 }
+	.menu-section.fl.active,
 	.map-nav-inner > li.active > a{
 		background:url(../images/caret-d-active.png) right 12px no-repeat;
 	}
@@ -964,15 +993,14 @@
 	display:inline-block;
 	position:relative;
 	color:#b2b2b2;
-	padding-right:5px;
+	padding-right:10px;
 	padding-left:10px;
 	vertical-align:top;
 	padding-bottom:3px;
 	border-right:1px solid #434646;
-	min-width:165px;
+	min-width:160px;
 }
 .map-nav-inner > li.long{
-	min-width:210px;
 }
 .map-nav-inner > .divider{
 	padding:0;
@@ -1250,6 +1278,9 @@ vertical-align: middle;
 	border:none;
 	color: white;
 }
+.poi-title-list .menu-section.fl{
+	float:left;
+}
 .poi-title-list .menu-section{
 	float:right;
 	position:relative;
@@ -1348,7 +1379,6 @@ vertical-align: middle;
 .visibility-section span{
 	display:inline-block;
 	vertical-align:middle;
-	max-width:630px;
 }
 
 @media (max-width: 1050px){
@@ -1360,6 +1390,10 @@ vertical-align: middle;
 	width:47%;
 }
 .notification-box{
+	width:100%;
+}
+.right-input{
+	float:none;
 	width:100%;
 }
 .channel-form label{
@@ -1379,6 +1413,9 @@ vertical-align: middle;
 	width:0;
 }
 .content-expaneded .panel-content-section{
+	margin-left:0;
+}
+.panel-content-section{
 	margin-left:0;
 }
 #panel-page .show-sidebar:focus,
@@ -1413,6 +1450,10 @@ vertical-align: middle;
 	position:inherit;
 	margin-top:3px;
 	display:inline-block;
+	margin-left:20px;
+}
+#panel-page .content-expaneded .show-sidebar{
+	margin-left:0;
 }
 .content-expaneded .panel-content-section{
 	padding-top:10px;

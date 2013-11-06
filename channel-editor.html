@@ -62,7 +62,7 @@
 
 <div class="main-content-wrap">
 	<div class="container-980 clearfix ">
-    	<a href="#" class="show-sidebar"><img src="images/menu.png" alt=""></a>
+    	<a href="#" class="show-sidebar"></a>
         <div class="panel-leftsidebar">
        	  <ul class="navigation">
             	<li class="active"><a href="#welcome"><em class="icon-star"></em> Welcome</a></li>
@@ -71,8 +71,8 @@
                 <li><a href="#indoor"><em class="icon-glob"></em> Indoor Maps</a></li>
                 <li><a href="#" class="parent-item"><em class="icon-tag"></em> POIs</a>
                 	<ul class="sub-nav">
+	                    <li><a href="#create-poi"><em class="icon-pin-plus"></em> Create POIs</a></li>
                         <li><a href="#upload-pois"><em class="icon-upload"></em> Upload POIs</a></li>
-		                <li><a href="#create-poi"><em class="icon-pin-plus"></em> Create POIs</a></li>
                     </ul>
                 </li>
                 <li><a href="#itineraries"><em class="icon-pin"></em> Itineraries</a></li>
@@ -209,7 +209,7 @@
     					</p>
 						<div class="clearfix">
                             <label class="label-middle">Channel Download Code</label>
-                            <div class="fr">
+                            <div class="right-input">
                                 <div class="border-right-section" >
                                     <div class="inner-border-section ">
                                         <input type="text" value="NHX" onFocus="if(this.value=='NHX'){this.value=''}" onBlur="if(this.value==''){this.value='NHX'}" class="without-border block-level">
@@ -233,8 +233,7 @@
 							<p class="char-remaining-text">Characters remaining: <span class="char-remaining">#</span>&nbsp;&nbsp;</p>
                         </div>
                     </form>
-                    <p class="last-para">Add Your Location To The World Map</p>
-                    <p><small>This is where you can found on the Explore page</small></p>
+                    <h3>Channel Location</h3>
                     <div class="map">
                     	<p><img src="images/map.png" alt="Map"></p>
                     </div>
@@ -301,20 +300,6 @@
                             </div>
                     </div>
                     	<p><span class="label-bot">Logo tips</span></p>
-                    </div>
-                    <div class="small-thumb">
-                        <div class="border-right-section">
-                            <div class="inner-border-section ">
-                                <div class="thumb-footer clearfix">
-                                    <button class="trash fr custom-appearance" title="Remove from Chrome">
-                                        <span class="lid"></span>
-                                        <span class="can"></span>
-                                    </button>
-                                    <div class="cl"></div>
-                                </div>
-                            </div>
-                    </div>
-                        <p><span class="label-bot">Splash screen tips</span></p>
                     </div>
                     <div class="cl"></div>
                     <div class="keyword-section">
@@ -416,34 +401,6 @@
                     </div>
                 	<div class="large-thumb main-thumb">
                       <div class="border-right-section">
-                            <div class="inner-border-section">
-                                <div class="thumb-footer clearfix">
-                                    <button class="trash fr custom-appearance" title="Remove from Chrome">
-                                        <span class="lid"></span>
-                                        <span class="can"></span>
-                                    </button>
-                                    <div class="cl"></div>
-                                </div>
-                            </div>
-                    </div>
-	                    <p><span class="label-bot">Channel image tips</span></p>
-                    </div>
-                    <div class="small-thumb">
-                        <div class="border-right-section">
-                            <div class="inner-border-section">
-                                <div class="thumb-footer clearfix">
-                                    <button class="trash fr custom-appearance" title="Remove from Chrome">
-                                        <span class="lid"></span>
-                                        <span class="can"></span>
-                                    </button>
-                                    <div class="cl"></div>
-                                </div>
-                            </div>
-                    </div>
-	                    <p><span class="label-bot">Channel image tips</span></p>
-                    </div>
-                    <div class="small-thumb">
-                        <div class="border-right-section">
                             <div class="inner-border-section">
                                 <div class="thumb-footer clearfix">
                                     <button class="trash fr custom-appearance" title="Remove from Chrome">
@@ -604,19 +561,19 @@ when exploring this building.</em></p>
         <div class="content-area" id="upload-pois">
         	<h1>Upload POIs</h1>
             <ul class="tab-nav">
-            	<li><a href="#api-key">API Key </a></li>
+            	<li class="active"><a href="#api-key">API Key </a></li>
                 <li><a href="#api-documentation">API Documentation</a></li> 
-                <li class="active"><a href="#what-is-api">What is an API?</a></li>
+                <li><a href="#what-is-api">What is an API?</a></li>
             </ul>
-            <div id="api-key" class="tab-content">
+            <div id="api-key" class="tab-content active">
             	<h2>Do you already have a database of POIs?</h2>
                 <p>Get a MyTourGuide API Key and upload your existing POIs into your channel with the click of a button.</p>
                 <a href="#" class="primary-btn">Get API Key</a>
                 <p>By clicking "Get API Key" you are indicating that you have read, understood and agreed to <a class="default-link" href="#">MyTourGuide's Terms of Service.</a></p>
                 <h2>Congratulations!</h2>
 				<p>Your API key has been approved.</p>
-				<p><strong>API Key:</strong>&nbsp;&nbsp; MVyzhWcQQZEHiLMgipYV8Oq7Y6Zcvi5vPlL7brFc<br class="break-line">
-				<strong>Channel ID:</strong>&nbsp;&nbsp;  c5ef7980-b36a-421a-9055-b2a39a2c56d7</p>
+				<p><strong class="label">API Key:</strong>&nbsp;&nbsp; MVyzhWcQQZEHiLMgipYV8Oq7Y6Zcvi5vPlL7brFc<br class="break-line">
+				<strong class="label">Channel ID:</strong>&nbsp;&nbsp;  c5ef7980-b36a-421a-9055-b2a39a2c56d7</p>
                 <p>If you think your API key has been comporised, you can replace it with a new one.<br class="breal-line">
 				Click the “replace API key” button and we will delete your current key and issue you a new one.</p>
                 <a href="#" class="primary-btn">Replace API Key</a>
@@ -638,7 +595,7 @@ when exploring this building.</em></p>
                 </ol>
                 <p>Need more help? Give us a call at 603 493-6503 or email us at <a href="#">channels@mytourguide.com</a></p>
             </div>
-            <div id="what-is-api" class="tab-content active">
+            <div id="what-is-api" class="tab-content">
        	    <h3>What is an API?</h3>
                 <p>The MyTourGuide API is like a key that opens a locked door on the MyTourGuide website where
                 you can upload your existing POI data. So, If you already have a database of information about
@@ -687,25 +644,23 @@ when exploring this building.</em></p>
                             <p>Filters (selections will appear on map and in list)</p>
                             <div class="cl"></div>
                             <p>
-                                <span><input type="checkbox"><label>Active POIs</label></span>
+                                <span><input type="checkbox" checked><label>Active POIs</label></span>
                                 <span><input type="checkbox"> <label>Inactive POIs</label></span>
-                                <span><input type="checkbox"> <label>Activities</label></span>
-                                <span><input type="checkbox"> <label>Attractions</label></span>
-                                <span><input type="checkbox"> <label>Accomodations</label></span>
+                                <span><input type="checkbox" checked> <label>Activities</label></span>
+                                <span><input type="checkbox" checked> <label>Attractions</label></span>
+                                <span><input type="checkbox" checked> <label>Accomodations</label></span>
                                 <span><input type="checkbox"> <label>Exhibits</label></span>
-                                <span><input type="checkbox"> <label>Food & Drink</label></span>
+                                <span><input type="checkbox" checked> <label>Food & Drink</label></span>
                                 <span><input type="checkbox"> <label>Noteworthy</label></span>
                                 <span><input type="checkbox"> <label>Other</label></span>
                                 <span><input type="checkbox"> <label>Parking</label></span>
                                 <span><input type="checkbox"> <label>Public Toilets</label></span>
-                                <span><input type="checkbox"> <label>Shopping</label></span>
+                                <span><input type="checkbox" checked> <label>Shopping</label></span>
                             </p>
                         </div>
                         <ul class="map-nav-inner clearfix">
                             <li>
-                                <a href="#" class="menu-btn">Drag and drop 
-                                    <img src="images/question-mark.png" alt="">
-                                </a>
+                                <a href="#" class="menu-btn">Drag and drop </a>
                                 <ul class="menu-list short">
                                     <li><a href="#"><img src="images/parking_marker.png" alt=""> Tour Stops</a>
                                         <ul class="submenu-list">
@@ -725,9 +680,7 @@ when exploring this building.</em></p>
                                     <li class="last-item"><a href="#"><img src="images/parking_marker.png" alt=""> Building</a></li>
                                 </ul>								                            	
                             </li>
-                            <li class="long"><a href="#" class="menu-btn">Place with address  
-                                <img src="images/question-mark.png" alt="">
-                                </a>
+                            <li class="long"><a href="#" class="menu-btn">Place with address </a>
                                 <ul class="menu-list">
                                     <li>
                                         <form class="search-place-form">
@@ -755,6 +708,28 @@ when exploring this building.</em></p>
                                             
                                         </form>
                                     </li>
+                                    
+                                </ul>								                            	
+                            </li>
+                            <li>
+                                <a href="#" class="menu-btn"><span class="icon-glob white-icon"></span>Map Selector </a>
+                                <ul class="menu-list short">
+                                    <li><a href="#"><img src="images/parking_marker.png" alt=""> Tour Stops</a>
+                                        <ul class="submenu-list">
+                                            <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Noteworthy</a></li>
+                                            <li><a href="#"><img src="images/attraction_marker.png" alt=""> Attractions</a></li>
+                                            <li><a href="#"><img src="images/activity_marker.png" alt=""> Activities</a></li>
+                                            <li><a href="#"><img src="images/food_marker.png" alt=""> Shopping</a></li>
+                                            <li><a href="#"><img src="images/accommodations_marker.png" alt=""> Food & Drink</a></li>
+                                            <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Accommodations</a></li>
+                                            <li><a href="#"><img src="images/other_marker.png" alt=""> Other</a></li>
+                                            <li><a href="#"><img src="images/parking_marker.png" alt=""> Parking</a></li>
+                                            <li><a href="#"><img src="images/toilet_marker.png" alt=""> Public Toilet</a></li>
+                                            <li><a href="#"><img src="images/food_marker.png" alt=""> Exhibit</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><img src="images/parking_marker.png" alt=""> Audio Trigger</a></li>
+                                    <li class="last-item"><a href="#"><img src="images/parking_marker.png" alt=""> Building</a></li>
                                 </ul>								                            	
                             </li>
                         </ul>
@@ -762,8 +737,8 @@ when exploring this building.</em></p>
                 </div>
                 <div class="right-section">
                     <ul class="map-tab-nav tab-nav">
-                        <li class="active"><a href="#tab-1">Map View</a></li>
-                        <li><a href="#list-view">List View</a></li>
+                        <li class="active"><a href="#tab-1">List View</a></li>
+                        <li><a href="#list-view">Map View</a></li>
                     </ul>
                     <div class="tab-content" id="tab-1" style="display:block">
                         <div class="poi-title-list">
@@ -771,9 +746,27 @@ when exploring this building.</em></p>
                                 <div class="checkbox">
                                     <input type="checkbox">
                                 </div>
-                                <select>
-                                    <option>Sort By</option>
-                                </select>
+                                <div class="menu-section fl">
+                                    <a href="#" class="menu-btn">Sort By&nbsp;</a>
+                                    <ul class="menu-list short">
+                                        <li><a href="#"><img src="images/parking_marker.png" alt=""> Tour Stops</a>
+                                            <ul class="submenu-list">
+                                                <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Noteworthy</a></li>
+                                                <li><a href="#"><img src="images/attraction_marker.png" alt=""> Attractions</a></li>
+                                                <li><a href="#"><img src="images/activity_marker.png" alt=""> Activities</a></li>
+                                                <li><a href="#"><img src="images/food_marker.png" alt=""> Shopping</a></li>
+                                                <li><a href="#"><img src="images/accommodations_marker.png" alt=""> Food & Drink</a></li>
+                                                <li><a href="#"><img src="images/noteworthy_marker.png" alt=""> Accommodations</a></li>
+                                                <li><a href="#"><img src="images/other_marker.png" alt=""> Other</a></li>
+                                                <li><a href="#"><img src="images/parking_marker.png" alt=""> Parking</a></li>
+                                                <li><a href="#"><img src="images/toilet_marker.png" alt=""> Public Toilet</a></li>
+                                                <li><a href="#"><img src="images/food_marker.png" alt=""> Exhibit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><img src="images/parking_marker.png" alt=""> Audio Trigger</a></li>
+                                        <li class="last-item"><a href="#"><img src="images/parking_marker.png" alt=""> Building</a></li>
+                                    </ul>								                            	
+                                </div>
                                 <div class="menu-section">
                                     <a class="menu-btn" href="#">Batch Edit 
                                         <span class="icon-setting white-icon"></span>

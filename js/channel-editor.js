@@ -107,7 +107,6 @@ $(function () {
 					},300);
 					$('.panel-leftsidebar').animate({
 							width			:	215,
-							'margin-right'	: 	20
 						},300)
 				}
 			else{
@@ -118,7 +117,6 @@ $(function () {
 				},300);
 				$('.panel-leftsidebar').animate({
 						width			:	0,
-						'margin-right'	: 	0
 				},300)
 			}
 			return false;
