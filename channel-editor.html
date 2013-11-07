@@ -36,7 +36,7 @@
     
 	<script src="stylesheet" href="js/responsive-tables.js"></script>
     <script type="text/javascript" src="js/channel-editor.js"></script>
-    
+    <script type="text/javascript" src="js/custom-form-elements.js"></script>
     
 </head>
 
@@ -204,8 +204,7 @@
 	            	<form class="channel-form">
                     	<p class="clearfix">
                             <label>Channel Title</label>
-                            <span class="notification-box">[Note to Ankur:Title is auto populated 
-                             from their registration]</span>
+                            <input class="notification-box" type="text" value="">
     					</p>
 						<div class="clearfix">
                             <label class="label-middle">Channel Download Code</label>
@@ -237,6 +236,7 @@
                     <div class="map">
                     	<p><img src="images/map.png" alt="Map"></p>
                     </div>
+                    <p class="text-right"><a href="#">Reset Map Location</a></p>
                     <form class="contact-form">
                    	  <div class="section-header contact-header">
 	                    	<h3>Contact Information</h3>
@@ -419,15 +419,11 @@
         </div>
         <div class="content-area" id="indoor">
         <h2>Indoor Maps</h2>
-        <p>If you have indoor locations that you want to make accessible to visitors, you can upload your own custom maps and use
-them in your channel, itinerary, or tours. If you don’t have any need to feature indoor maps, you can skip this section. Your
-custom map should be saved as a jpg with a minimum dimension of 1024x1024 pixels and a maximum file size of 5 MB. To
-add a map, first place a building on the outside map. Then add your map(s) to the building. By default, new buidlings and
-maps are set to the “inactive” state, which means they are hidden from view to your visitors. To make them visible, change
-the building or map to “active”. If you add more than one map to a building, you can make one of the maps the primary
-map. The prmary map is the default map that the visitor will see when viewing maps in that building.</p>
-			<div class="video-wrapper">
-            	<div class="video-section">
+        <div class="video-wrapper">
+           	<div class="video-section">
+                <p>If you have indoor locations that you want to make accessible to visitors, you can upload your own 
+                custom maps and use them in your channel, itinerary, or tours. If you don’t have any need to feature indoor maps, you can skip this section. Your custom map should be saved as a jpg with a minimum dimension of 1024x1024 pixels and a maximum file size of 5 MB. To add a map, first place a building on the outside map. Then add your map(s) to the building. By default, new buidlings and maps are set to the “inactive” state, which means they are hidden from view to your visitors. To make them visible, change the building or map to “active”. If you add more than one map to a building, you can make one of the maps the primary map. The prmary map is the default map that the visitor will see when viewing maps in that building.</p>
+			
             	<img alt="" src="images/videothumb.png" class="video-thumb">
                 <span>Video Tutorial</span>
                 </div>
@@ -437,8 +433,9 @@ map. The prmary map is the default map that the visitor will see when viewing ma
             <p><img class="with-border" src="images/map-large.png" alt=""></p>
             
             <div class="topic-left-section">
-            <form class="search-topic-form">
-                <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter title of a new topic here'}" onfocus="if(this.value=='Enter title of a new topic here'){this.value=''}" value="Enter title of a new topic here">
+            <img class="fl" src="images/facility_marker.png" alt="">
+            <form class="search-topic-form ml-40">
+                <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter title of the building here'}" onfocus="if(this.value=='Enter title of the building here'){this.value=''}" value="Enter title of the building here">
             <div class="map-edit clearfix">
                 <div class="for-active">
                     <a href="#">Add a map</a>
@@ -454,8 +451,8 @@ map. The prmary map is the default map that the visitor will see when viewing ma
             </form>
             </div>
             <div class="cl"></div>
-            <div class="clearfix">
-                <div class="small-thumb">
+            <div class="edit-map-wrap clearfix">
+                <div class="medium-thumb map-img">
                     <div class="border-right-section">
                         <div class="inner-border-section">
                             <div class="thumb-footer clearfix">
@@ -470,10 +467,10 @@ map. The prmary map is the default map that the visitor will see when viewing ma
                   
                 </div>
                 <div class="topic-left-section">
-                    <form class="search-topic-form">
-                        <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter title of a new topic here'}" onfocus="if(this.value=='Enter title of a new topic here'){this.value=''}" value="Enter title of a new topic here">
+                    <form class="search-topic-form contact-form ">
+                        <input type="text" class="input-large last-item block-level" onblur="if(this.value==''){this.value='Enter the title of the map here'}" onfocus="if(this.value=='Enter the title of the map here'){this.value=''}" value="Enter the title of the map here">
                     </form>
-                    <p class="label-bot center-text"><em>Tip: Make map titles short (e.g. First oor, Second oor, etc.)</em></p>
+                    <p class="label-bot"><em>Tip: Make map titles short (e.g. First oor, Second oor, etc.)</em></p>
                     <a href="#" class="btn-white btn-white-normal mt-40">Save Map</a>
                 </div>
             </div>
@@ -644,18 +641,53 @@ when exploring this building.</em></p>
                             <p>Filters (selections will appear on map and in list)</p>
                             <div class="cl"></div>
                             <p>
-                                <span><input type="checkbox" checked><label>Active POIs</label></span>
-                                <span><input type="checkbox"> <label>Inactive POIs</label></span>
-                                <span><input type="checkbox" checked> <label>Activities</label></span>
-                                <span><input type="checkbox" checked> <label>Attractions</label></span>
-                                <span><input type="checkbox" checked> <label>Accomodations</label></span>
-                                <span><input type="checkbox"> <label>Exhibits</label></span>
-                                <span><input type="checkbox" checked> <label>Food & Drink</label></span>
-                                <span><input type="checkbox"> <label>Noteworthy</label></span>
-                                <span><input type="checkbox"> <label>Other</label></span>
-                                <span><input type="checkbox"> <label>Parking</label></span>
-                                <span><input type="checkbox"> <label>Public Toilets</label></span>
-                                <span><input type="checkbox" checked> <label>Shopping</label></span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked">
+                                	<label>Active POIs</label></span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" >
+                                    <label>Inactive POIs</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Activities</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Attractions</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Accomodations</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" >
+                                    <label>Exhibits</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Food & Drink</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" >
+                                    <label>Noteworthy</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" >
+                                    <label>Other</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" >
+                                    <label>Parking</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" >
+                                    <label>Public Toilets</label>
+                                </span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Shopping</label>
+                                </span>
                             </p>
                         </div>
                         <ul class="map-nav-inner clearfix">
@@ -737,8 +769,8 @@ when exploring this building.</em></p>
                 </div>
                 <div class="right-section">
                     <ul class="map-tab-nav tab-nav">
-                        <li class="active"><a href="#tab-1">List View</a></li>
-                        <li><a href="#list-view">Map View</a></li>
+                        <li class="active"><a href="#tab-1">List</a></li>
+                        <li><a href="#list-view">POI Detail</a></li>
                     </ul>
                     <div class="tab-content" id="tab-1" style="display:block">
                         <div class="poi-title-list">
@@ -747,7 +779,7 @@ when exploring this building.</em></p>
                                     <input type="checkbox">
                                 </div>
                                 <div class="menu-section fl">
-                                    <a href="#" class="menu-btn">Sort By&nbsp;</a>
+                                    <a href="#" class="menu-btn">Sort By &nbsp;</a>
                                     <ul class="menu-list short">
                                         <li><a href="#"><img src="images/parking_marker.png" alt=""> Tour Stops</a>
                                             <ul class="submenu-list">
@@ -984,10 +1016,11 @@ when exploring this building.</em></p>
 
         <div class="content-area" id="itineraries">
         	<h1>Itineraries</h1>
-            <p>Do you have any suggested itineraries that you would like to feature in your channel? To do so, simply select the itinerary and set its status to “included”. If you want to exclude the itinerary from your channel, change its status to “excluded”.</p>
-<p>To create a new suggested itinerary, click the “New Itinerary” button. Note: this will open the Itinerary Editor in a new browser window. When you return to the Channel Editor, you will need to refresh the page to see your new itinerary in the list. Also keep in mind that when you create a new itinerary, you can set its visibility to public or private. Visitors will only be able to see your itinerary if visibility is set to “public”.</p>
 			<div class="video-wrapper">
             	<div class="video-section">
+            
+                    <p>Do you have any suggested itineraries that you would like to feature in your channel? To do so, simply select the itinerary and set its status to “included”. If you want to exclude the itinerary from your channel, change its status to “excluded”.</p>
+                    <p>To create a new suggested itinerary, click the “New Itinerary” button. Note: this will open the Itinerary Editor in a new browser window. When you return to the Channel Editor, you will need to refresh the page to see your new itinerary in the list. Also keep in mind that when you create a new itinerary, you can set its visibility to public or private. Visitors will only be able to see your itinerary if visibility is set to “public”.</p>
             	<img class="video-thumb" src="images/videothumb.png" alt="">
                 <span>Video Tutorial</span>
                 </div>
@@ -1059,9 +1092,9 @@ when exploring this building.</em></p>
                         <div class="table-footer clearfix">
 	                        <p class="last-para">
                             	<span>Showing 1 to 50 of 149</span>
-                                <a href="#" class="btn-white">First</a>
-                                <a href="#" class="btn-white">Previous</a>
-                                <a href="#" class="btn-white">1</a>
+                                <a href="#" class="btn-white ui-state-disabled">First</a>
+                                <a href="#" class="btn-white ui-state-disabled">Previous</a>
+                                <a href="#" class="btn-white ui-state-disabled">1</a>
                                 <a href="#" class="btn-white">2</a>
                                 <a href="#" class="btn-white">3</a>
                                 <a href="#" class="btn-white">Next</a>
@@ -1090,7 +1123,7 @@ when exploring this building.</em></p>
                                         <div class="for-active">
                                             <a href="#">Type of item</a>
                                         </div>
-                                        <div class="for-action">
+                                        <div class="for-active">
                                             <a href="#">1:00 PM</a>
                                         </div>
                                     </div><!-- post-edit -->
@@ -1106,7 +1139,7 @@ when exploring this building.</em></p>
                                         <div class="for-active">
                                             <a href="#">Type of item</a>
                                         </div>
-                                        <div class="for-action">
+                                        <div class="for-active">
                                             <a href="#">1:00 PM</a>
                                         </div>
                                     </div><!-- post-edit -->
@@ -1122,7 +1155,7 @@ when exploring this building.</em></p>
                                         <div class="for-active">
                                             <a href="#">Type of item</a>
                                         </div>
-                                        <div class="for-action">
+                                        <div class="for-active">
                                             <a href="#">1:00 PM</a>
                                         </div>
                                     </div><!-- post-edit -->
@@ -1141,7 +1174,7 @@ when exploring this building.</em></p>
                                         <div class="for-active">
                                             <a href="#">Type of item</a>
                                         </div>
-                                        <div class="for-action">
+                                        <div class="for-active">
                                             <a href="#">1:00 PM</a>
                                         </div>
                                     </div><!-- post-edit -->
@@ -1154,10 +1187,11 @@ when exploring this building.</em></p>
         </div><!-- content-area -->
         <div class="content-area" id="tours">
         	<h1>Tours</h1>
-            <p>Do you have any suggested itineraries that you would like to feature in your channel? To do so, simply select the itinerary and set its status to “included”. If you want to exclude the itinerary from your channel, change its status to “excluded”.</p>
-<p>To create a new suggested itinerary, click the “New Itinerary” button. Note: this will open the Itinerary Editor in a new browser window. When you return to the Channel Editor, you will need to refresh the page to see your new itinerary in the list. Also keep in mind that when you create a new itinerary, you can set its visibility to public or private. Visitors will only be able to see your itinerary if visibility is set to “public”.</p>
 			<div class="video-wrapper">
             	<div class="video-section">
+            
+                    <p>Do you have any suggested itineraries that you would like to feature in your channel? To do so, simply select the itinerary and set its status to “included”. If you want to exclude the itinerary from your channel, change its status to “excluded”.</p>
+                    <p>To create a new suggested itinerary, click the “New Itinerary” button. Note: this will open the Itinerary Editor in a new browser window. When you return to the Channel Editor, you will need to refresh the page to see your new itinerary in the list. Also keep in mind that when you create a new itinerary, you can set its visibility to public or private. Visitors will only be able to see your itinerary if visibility is set to “public”.</p>
             	<img class="video-thumb" src="images/videothumb.png" alt="">
                 <span>Video Tutorial</span>
                 </div>
@@ -1239,9 +1273,9 @@ when exploring this building.</em></p>
                         <div class="table-footer clearfix">
                             <p class="last-para">
                                 <span>Showing 1 to 50 of 149</span>
-                                <a href="#" class="btn-white">First</a>
-                                <a href="#" class="btn-white">Previous</a>
-                                <a href="#" class="btn-white">1</a>
+                                <a href="#" class="btn-white ui-state-disabled">First</a>
+                                <a href="#" class="btn-white ui-state-disabled">Previous</a>
+                                <a href="#" class="btn-white ui-state-disabled">1</a>
                                 <a href="#" class="btn-white">2</a>
                                 <a href="#" class="btn-white">3</a>
                                 <a href="#" class="btn-white">Next</a>
@@ -1268,9 +1302,9 @@ when exploring this building.</em></p>
         </div><!-- content-area -->
         <div class="content-area" id="partner">
         	<h1>Partner Content</h1>
-            <p>Would you like to include any channels, itineraries, or tours that other organizations or people created? To do so, simply select the item you wish to feature in your channel and set its channel status to “included”. You can change the status of the item back to “excluded” at any time to remove that item from your channel.</p>
 			<div class="video-wrapper">
             	<div class="video-section">
+                    <p>Would you like to include any channels, itineraries, or tours that other organizations or people created? To do so, simply select the item you wish to feature in your channel and set its channel status to “included”. You can change the status of the item back to “excluded” at any time to remove that item from your channel.</p>
             	<img class="video-thumb" src="images/videothumb.png" alt="">
                 <span>Video Tutorial</span>
                 </div>
@@ -1289,19 +1323,40 @@ when exploring this building.</em></p>
                             <span><a href="#">Clear All</a></span>
     	                    <div class="cl"></div>
                             <p>
-                                <span><input type="checkbox"><label>Channels</label></span>
-                                <span><input type="checkbox"> <label>Tours</label></span>
-                                <span><input type="checkbox"> <label>Itineraries</label></span>
-                                <span><input type="checkbox"> <label>Member content only</label></span>
-                                <span><input type="checkbox"> <label>Included</label></span>
-                                <span><input type="checkbox"> <label>Excluded</label></span>
-                                <span><input type="checkbox"> <label>Free only</label></span>
+                                <span>
+                                	<input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Channels</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Tours</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Itineraries</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check" class="styled" >
+                                    <label>Member content only</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Included</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check" class="styled" checked="checked" >
+                                    <label>Excluded</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check" class="styled"  >
+                                    <label>Free only</label>
+                                </span>
                             </p>
                         </div>
                         <table width="100%" class="tablesorter">
                         	<thead>
                                 <tr>
-                                    <th width="40%">Title</th>
+                                    <th width="20%">Title</th>
                                     <th width="10%">Price <em></em></th>
                                     <th width="10%">Type <em></em></th>
                                     <th width="25%">Author <em></em></th>
@@ -1391,9 +1446,9 @@ when exploring this building.</em></p>
                         <div class="table-footer clearfix">
 	                        <p class="last-para">
                             	<span>Showing 1 to 50 of 149</span>
-                                <a href="#" class="btn-white">First</a>
-                                <a href="#" class="btn-white">Previous</a>
-                                <a href="#" class="btn-white">1</a>
+                                <a href="#" class="btn-white ui-state-disabled">First</a>
+                                <a href="#" class="btn-white ui-state-disabled">Previous</a>
+                                <a href="#" class="btn-white ui-state-disabled">1</a>
                                 <a href="#" class="btn-white">2</a>
                                 <a href="#" class="btn-white">3</a>
                                 <a href="#" class="btn-white">Next</a>
@@ -1430,9 +1485,9 @@ when exploring this building.</em></p>
             </div><!-- content-area -->
             <div class="content-area" id="settings">
                 <h1>Settings</h1>
-                <p>Be default, your channel’s visibility is set to “private”, which means only you will be able to see it on the website and in the mobile app. When you are ready to make it available to the public, change the visibility setting to “public” and it will become visiible to anyone on the MyTourGuide website and mobile app.</p>
                 <div class="video-wrapper">
                     <div class="video-section">
+                        <p>Be default, your channel’s visibility is set to “private”, which means only you will be able to see it on the website and in the mobile app. When you are ready to make it available to the public, change the visibility setting to “public” and it will become visiible to anyone on the MyTourGuide website and mobile app.</p>
                     <img class="video-thumb" src="images/videothumb.png" alt="">
                     <span>Video Tutorial</span>
                     </div>
@@ -1463,9 +1518,9 @@ when exploring this building.</em></p>
             </div>
             <div class="content-area" id="members">
                 <h1>Membership</h1>
-                <p>In addition to your own account, you can also invite other accounts on MyTourGuide to become members of your channel. Channel members are granted access to your POIs, which they can incorporate into their itineraries or tours. When channel members create itineraries or tours, you can choose whether or not to include thier content in your channel. You can revoke membership or exclude member content at any time.</p>
                 <div class="video-wrapper">
                     <div class="video-section">
+                        <p>In addition to your own account, you can also invite other accounts on MyTourGuide to become members of your channel. Channel members are granted access to your POIs, which they can incorporate into their itineraries or tours. When channel members create itineraries or tours, you can choose whether or not to include thier content in your channel. You can revoke membership or exclude member content at any time.</p>
                     <img class="video-thumb" src="images/videothumb.png" alt="">
                     <span>Video Tutorial</span>
                     </div>
@@ -1479,7 +1534,7 @@ when exploring this building.</em></p>
                                 <h4>Channel Members</h4>
                              </div>
                              <div class="table-header clearfix text-right contact-form">
-                                <span class="icon-users"></span>
+                                <span class="icon-member-1"></span>&nbsp;&nbsp;
                                 <input type="text" value="Email address">
                                 <a href="#" class="btn-white-normal btn-white">Invite</a>
                              </div>   
@@ -1495,7 +1550,7 @@ when exploring this building.</em></p>
                                 <tbody>
                                 
                                     <tr>
-                                        <td><a href="#"><img src="images/help_icon2.png" alt=""></a> Last Name, First</td>
+                                        <td><a href="#" class="icon-cross"></a> Last Name, First</td>
                                         <td><a href="#">Screen ID</a></td>
                                         <td>
                                             <img src="images/star.png" alt=""><img src="images/star.png" alt=""><img src="images/star.png" alt=""><img src="images/star.png" alt=""><img src="images/star-gray.png" alt="">
@@ -1567,9 +1622,9 @@ when exploring this building.</em></p>
                             <div class="table-footer clearfix">
                                 <p class="last-para">
                                     <span>Showing 1 to 50 of 149</span>
-                                    <a href="#" class="btn-white">First</a>
-                                    <a href="#" class="btn-white">Previous</a>
-                                    <a href="#" class="btn-white">1</a>
+                                    <a href="#" class="btn-white ui-state-disabled">First</a>
+                                    <a href="#" class="btn-white ui-state-disabled">Previous</a>
+                                    <a href="#" class="btn-white ui-state-disabled">1</a>
                                     <a href="#" class="btn-white">2</a>
                                     <a href="#" class="btn-white">3</a>
                                     <a href="#" class="btn-white">Next</a>

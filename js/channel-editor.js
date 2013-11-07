@@ -113,10 +113,10 @@ $(function () {
 				$('.container-980').addClass('content-expaneded');
 				
 				$('.panel-content-section').animate({
-					'margin-left' :	0
+					'margin-left' :	60
 				},300);
 				$('.panel-leftsidebar').animate({
-						width			:	0,
+						width			:	50
 				},300)
 			}
 			return false;
