@@ -36,7 +36,9 @@
 	letter-spacing:inherit;
 }
 #panel-page small{
-	color:#808080;
+	color:#000;
+	font-size:15px;
+	font-weight:normal;
 }
 #panel-page #header{
 	height:auto;
@@ -65,7 +67,9 @@ h1{
 	color:#000;
 }
 #panel-page p{
+	font-size:15px;
 	margin:0 0 15px;
+	color: #000;
 }
 #panel-page .last-para{
 	margin-bottom:0;
@@ -1132,6 +1136,9 @@ input:focus{
 table a:hover{
 	color:#3131c4;
 }
+a:hover{
+	color:#3131c4;
+}
 .menu-btn img{
 	vertical-align:middle;
 	margin:0 3px;
@@ -1434,6 +1441,13 @@ vertical-align: middle;
 	vertical-align:middle;
 	display:inline-block;
 }
+.table-section label,
+.table-section a{
+	color: #666;
+}
+#partner .table-section a:hover{
+	font-weight:bold;
+}
 .table-section table.tablesorter tbody tr:nth-child(2n+1) td{
 	background: #f3f4f8;
 }
@@ -1474,6 +1488,10 @@ vertical-align: middle;
 .table-sub-header .checkbox{
 	background: url(../images/checkbox-1.png) no-repeat;	
 }
+table label{
+	color:#666666;
+}
+
 
 
 @media (max-width: 1200px){
@@ -1507,21 +1525,16 @@ vertical-align: middle;
 	width:50%;
 }
 .panel-leftsidebar{
-	width:0;
+	width:50px;
 }
+.panel-content-section,
 .content-expaneded .panel-content-section{
-	margin-left:0;
+	margin-left:60px;
 }
-.panel-content-section{
-	margin-left:0;
-}
-#panel-page .show-sidebar:focus,
-#panel-page .show-sidebar:link,
+#panel-page .show-sidebar:focus, 
+#panel-page .show-sidebar:link, 
 #panel-page .show-sidebar{
-    border: 1px solid #575859;
-    -moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	left:7px;
 }
 }
 @media (max-width: 767px){
@@ -1530,6 +1543,10 @@ vertical-align: middle;
 	float:left;
 	margin-left:-10px;
 	margin-top:-10px;
+}
+#panel-page .show-sidebar,
+#panel-page .content-expaneded .show-sidebar{
+	top: 90px;
 }
 .container-980{
 	padding:10px;
@@ -1541,14 +1558,6 @@ vertical-align: middle;
 	margin:0 0 10px;
 }
 
-#panel-page .show-sidebar:focus,
-#panel-page .show-sidebar:link,
-#panel-page .show-sidebar{
-	position:inherit;
-	margin-top:3px;
-	display:inline-block;
-	margin-left:20px;
-}
 #panel-page .content-expaneded .show-sidebar{
 	margin-left:0;
 }

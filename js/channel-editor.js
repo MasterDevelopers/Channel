@@ -90,14 +90,6 @@ $(function () {
 				$('.sub-nav').slideUp();
 			}
 		});
-		$(window).load(function(){
-			if($(window).width() <= 920){
-				$(".navigation a").click (function () {
-					$('.show-sidebar').trigger('click');
-				});
-				$('.container-980').addClass('content-expaneded');
-			}
-		})
 
 		$('.show-sidebar').click(function(){
 			if ($('.container-980').hasClass('content-expaneded')){
