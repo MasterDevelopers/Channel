@@ -1,5 +1,11 @@
 $(function () {
-	
+	if($(window).width() < 979){
+		$('.container-980').addClass('content-expaneded');
+		var topheight = $('#header').outerHeight(true);
+	}
+	if($(window).width() < 767){
+		$('.panel-leftsidebar').css('padding-top', topheight + 25)
+	}
 	$('.video-wrapper .btn-collapse').click(function(){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');

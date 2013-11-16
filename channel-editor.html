@@ -62,8 +62,9 @@
 
 <div class="main-content-wrap">
 	<div class="container-980 clearfix ">
-    	<a href="#" class="show-sidebar"></a>
         <div class="panel-leftsidebar">
+        <a href="#" class="show-sidebar"></a>
+        <div class="cl"></div>
        	  <ul class="navigation">
             	<li class="active"><a href="#welcome"><em class="icon-star"></em> Welcome</a></li>
                 <li><a href="#general-info"><em class="icon-info"></em>  General Info</a></li>
@@ -84,32 +85,31 @@
         </div>
         <div class="panel-content-section">
           <div class="content-area active" id="welcome">
-            <div class="clearfix">
-                    <h1>Welcome to the CHANNEL EDITOR</h1>
-                    <div class="left-section">
-                        
-                        <p>The channel editor is a web-based application where you can
-                            create, edit, and update the content that appears in your
-                            channel. Any changes you make in the channel editor will
-                            become available to your visitors when you click the save
-                            button.</p>
-                        <p>When you’re first starting out, however, you may not want
-                            everyone to see what you’re working on. For that reason, your
-                            channel is set to “test” mode when you first launch the channel
-                            editor. In test mode, only you will be able to see your channel
-                            and its contents on the website and in the MyTourGuide
-                            mobile app. When you are ready to show it off to the world,
-                            you can switch it to “public” mode in the settings tab.</p>
-                    </div>
-                    <div class="right-section">
-                        <p><em>Would you like to see a document
-                        that shows you step-by-step how
-                        to create your channel and use it
-                        to promote your itineraries and
-                        tours to visitors?</em></p>
-                        <p><span class="guide"><img src="images/guide.png" alt=""></span>Channel Guide</p>
-                    </div>
+                <h1>Welcome to the CHANNEL EDITOR</h1>
+                <div class="left-section">
+                    
+                    <p>The channel editor is a web-based application where you can
+                        create, edit, and update the content that appears in your
+                        channel. Any changes you make in the channel editor will
+                        become available to your visitors when you click the save
+                        button.</p>
+                    <p>When you’re first starting out, however, you may not want
+                        everyone to see what you’re working on. For that reason, your
+                        channel is set to “test” mode when you first launch the channel
+                        editor. In test mode, only you will be able to see your channel
+                        and its contents on the website and in the MyTourGuide
+                        mobile app. When you are ready to show it off to the world,
+                        you can switch it to “public” mode in the settings tab.</p>
                 </div>
+                <div class="right-section">
+                    <p><em>Would you like to see a document
+                    that shows you step-by-step how
+                    to create your channel and use it
+                    to promote your itineraries and
+                    tours to visitors?</em></p>
+                    <p><span class="guide"><img src="images/guide.png" alt=""></span>Channel Guide</p>
+                </div>
+                <div class="cl hidden-mobile"></div>
                 <h2>FAQs</h2>
                 <ul class="accordian-section">
                     <li>
@@ -1106,8 +1106,8 @@ when exploring this building.</em></p>
                 <div class="right-section">
                     <div class="white-bg">
                         <h3>Itinerary Title</h3>
-                        <p class="last-para"><label>Channel Status: </label> <a href="#">Included</a><br>
-                            <label>Visibility Setting:  </label> <a href="#">Public</a><br>
+                        <p class="last-para"><label>Channel Status: </label> <a href="#" class="blue-link">Included</a><br>
+                            <label>Visibility Setting:  </label> <a href="#" class="blue-link">Public</a><br>
     <a href="#" class="btn-white btn-white-normal">Open in Explorer</a> <a href="#" class="btn-white btn-white-normal">Edit Itinerary</a></p>
                         <span class="placeholder-160"></span>
                         <p>Description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
@@ -1287,12 +1287,12 @@ when exploring this building.</em></p>
                 <div class="right-section">
                     <div class="white-bg">
                         <h3>Tour Title</h3>
-                        <p class="last-para"><label>Channel Status: </label> <a href="#">Included</a><br>
-                            <label>Visibility Setting:  </label> <a href="#">Public</a><br>
+                        <p class="last-para"><label>Channel Status: </label> <a href="#" class="blue-link">Included</a><br>
+                            <label>Visibility Setting:  </label> <a href="#" class="blue-link">Public</a><br>
     <a href="#" class="btn-white btn-white-normal">Open in Explorer</a> <a href="#" class="btn-white btn-white-normal">Edit Itinerary</a></p>
                         <span class="placeholder-160"></span>
                         <p>Description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
-                        <p class="bold">Genre: Historical<br>
+                        <p>Genre: Historical<br>
                         Language: English<br>
                         Duration: 2 or more hours<br>
                         Intended audience: All</p>
@@ -1313,9 +1313,9 @@ when exploring this building.</em></p>
             <div class="clearfix">
             	<div class="left-section">
                 	<div class="table-section">
-                    	<div class="table-header clearfix">
-	                        <a href="#" class="btn-white-normal fr btn-white"><span class="icon-pin-plus"></span> New Itinerary</a>
-                        	<h4>Item Title</h4>
+                    	<div class="table-header contact-form clearfix">
+	                        <span class="fr search-bar">Keyword search: <input type="text" class="input-medium"></span>
+                        	<h4>Content Created by Others</h4>
                          </div>   
 	                     <div class="table-sub-header">
                             <span><strong>Filters</strong></span>
@@ -1375,7 +1375,13 @@ when exploring this building.</em></p>
                                     <td>&nbsp;</td>
                                     <td>$4.99</td>
                                     <td>Tour</td>
-                                    <td><a href="#">Member Name</a></td>
+                                    <td>
+                                        <a href="#">
+                                            <strong>Member Name
+                                            	<span class="tooltip">Channal member</span>
+                                            </strong>
+                                        </a>
+                                    </td>
                                     <td>Excluded</td>
                                 </tr>
                                 <tr>
@@ -1460,10 +1466,10 @@ when exploring this building.</em></p>
                 <div class="right-section">
                     <div class="white-bg">
                         <h3>Item Title</h3>
-                        <p class="last-para"><label>Channel Status: </label> <a href="#">Included</a><br>
+                        <p class="last-para"><label>Channel Status: </label> <a href="#" class="blue-link">Included</a><br>
 						<a href="#" class="btn-white btn-white-normal">Open in Explorer</a></p>
                         <span class="placeholder-160"></span>
-                        <p class="bold">
+                        <p>
                         	Type: (channel, tour, itinerary)<br>
 							By: (author name)<br>
                             Aliation: <small>(Channel Member / Non Member)</small><br>
@@ -1472,7 +1478,7 @@ when exploring this building.</em></p>
                         </p>
                         <p>[tag, tag, tag]</p>
                         <p>Description text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
-                        <p class="bold">Genre: Historical<br>
+                        <p>Genre: Historical<br>
                         Language: English<br>
                         Duration: 2 or more hours<br>
                         Intended audience: All</p>
